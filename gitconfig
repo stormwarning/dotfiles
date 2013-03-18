@@ -7,3 +7,5 @@
 	email = rustyangel@gmail.com
 [core]
 	excludesfile = /Users/Jeff/.gitignore_global
+[push]
+	default = simple
