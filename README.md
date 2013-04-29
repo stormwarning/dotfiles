@@ -4,3 +4,5 @@
 
     $ rm -r .gitconfig
     $ ln -s .dotfiles/gitconfig .gitconfig
+
+For more, [see the Wiki](https://github.com/stormwarning/dotfiles/wiki).
