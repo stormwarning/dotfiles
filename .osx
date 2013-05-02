@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # ~/.osx — http://mths.be/osx
 
@@ -14,15 +14,20 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-#
-# TODO: Can this be prompted for?
-#
-# sudo scutil --set ComputerName "Razorgirl"
-# sudo scutil --set HostName "Razorgirl"
+
+# Prompt for computer name
+echo "Enter computer name: \c"
+read COMPUTER_NAME
+COMPUTER_NAME_NS="${COMPUTER_NAME// /-}"
+
+# Spaces are okay
+sudo scutil --set ComputerName $COMPUTER_NAME
+sudo scutil --set HostName $COMPUTER_NAME
 
 # No spaces for these
-# sudo scutil --set LocalHostName "Razorgirl"
-# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Razorgirl"
+sudo scutil --set LocalHostName $COMPUTER_NAME_NS
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $COMPUTER_NAME_NS
+
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
