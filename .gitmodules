@@ -1,0 +1,9 @@
+[submodule "ide/coda-bash"]
+	path = ide/coda-bash
+	url = git://github.com/wwjamieson3/Coda2-bash-mode.git
+[submodule "ide/coda-wordpress"]
+	path = ide/coda-wordpress
+	url = git://github.com/deryckoe/Wordpress-Syntax-Mode-for-Coda-2.git
+[submodule "ide/coda-solarized"]
+	path = ide/coda-solarized
+	url = git://github.com/bobthecow/solarized-seestyle.git
