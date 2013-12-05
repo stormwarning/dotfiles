@@ -10,3 +10,6 @@
 [submodule "ide/terminal-solarized"]
 	path = ide/terminal-solarized
 	url = https://stormwarning@github.com/tomislav/osx-terminal.app-colors-solarized.git
+[submodule "zsh/zsh-syntax-highlighting"]
+	path = zsh/zsh-syntax-highlighting
+	url = https://stormwarning@github.com/zsh-users/zsh-syntax-highlighting.git
