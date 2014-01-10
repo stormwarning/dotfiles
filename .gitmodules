@@ -25,3 +25,6 @@
 [submodule "ide/alfred-pkgman"]
 	path = ide/alfred-pkgman
 	url = git@github.com:willfarrell/alfred-pkgman-workflow.git
+[submodule "ide/alfred-encode"]
+	path = ide/alfred-encode
+	url = git@github.com:willfarrell/alfred-encode-decode-workflow.git
