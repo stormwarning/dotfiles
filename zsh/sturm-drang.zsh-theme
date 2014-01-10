@@ -7,9 +7,9 @@ $(parse_git_dirty)$ZSH_THEME_GIT_PROMPT_PREFIX$(current_branch)$ZSH_THEME_GIT_PR
 parse_vm_state() {
     # Check to see if we're in a directory with vagrant
     [ -e .vagrant ] || return 1
-    vm_name=$(VBoxManage showvminfo  $(find .vagrant -type f -name 'id' | while read line; do cat "${line}"; echo; done) --machinereadable | grep 'Name=' | sed '\"(.*)\"')
+    # vm_name=$(VBoxManage showvminfo  $(find .vagrant -type f -name 'id' | while read line; do cat "${line}"; echo; done) --machinereadable | grep 'Name=' | sed '\"(.*)\"')
     vm_state=$(VBoxManage showvminfo  $(find .vagrant -type f -name 'id' | while read line; do cat "${line}"; echo; done) --machinereadable | grep 'VMState=' | sed 's/.*"\(.*\)"[^"]*$/\1/')
-    echo "$VM_PROMPT_PREFIX${vm_name}$VM_PROMPT_SUFFIX"
+    echo "$VM_PROMPT_PREFIX${vm_state}$VM_PROMPT_SUFFIX"
 }
 
 function get_pwd() {
