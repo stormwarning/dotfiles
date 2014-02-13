@@ -28,3 +28,6 @@
 [submodule "ide/alfred-encode"]
 	path = ide/alfred-encode
 	url = git@github.com:willfarrell/alfred-encode-decode-workflow.git
+[submodule "ide/coda-jquery"]
+	path = ide/coda-jquery
+	url = git@github.com:rayman813/coda2-mode-jquery.git
