@@ -28,3 +28,6 @@
 [submodule "ide/coda-jquery"]
 	path = ide/coda-jquery
 	url = git@github.com:rayman813/coda2-mode-jquery.git
+[submodule "ide/coda-wordpress"]
+	path = ide/coda-wordpress
+	url = git@github.com:tillkruess/Coda-WordPress-Mode.git
