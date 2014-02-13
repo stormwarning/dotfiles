@@ -31,3 +31,6 @@
 [submodule "ide/coda-wordpress"]
 	path = ide/coda-wordpress
 	url = git@github.com:tillkruess/Coda-WordPress-Mode.git
+[submodule "ide/coda-emmet"]
+	path = ide/coda-emmet
+	url = git@github.com:emmetio/Emmet.codaplugin.git
