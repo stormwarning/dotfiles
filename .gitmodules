@@ -34,3 +34,6 @@
 [submodule "ide/coda-emmet"]
 	path = ide/coda-emmet
 	url = git@github.com:emmetio/Emmet.codaplugin.git
+[submodule "ide/phpcs-wp-coding-standards"]
+	path = ide/phpcs-wp-coding-standards
+	url = git@github.com:WordPress-Coding-Standards/WordPress-Coding-Standards.git
