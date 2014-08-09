@@ -1,0 +1,37 @@
+#!/usr/bin/env zsh
+
+#
+# install Homebrew packages
+#
+brew install wget
+brew install node
+brew install imagemagick
+
+
+#
+# install Cask
+#
+brew tap phinze/cask
+brew install brew-cask
+
+
+#
+# install Cask packages
+#
+brew cask install alfred
+brew cask install anvil
+brew cask install appcleaner
+brew cask install codekit
+brew cask install dropbox
+brew cask install firefox
+brew cask install fontprep
+brew cask install google-chrome
+brew cask install imagealpha
+brew cask install imageoptim
+brew cask install mamp
+brew cask install onepassword
+brew cask install rdio
+brew cask install tower
+brew cask install transmit
+brew cask install vlc
+brew cask install ynab
