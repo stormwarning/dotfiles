@@ -1,24 +1,27 @@
 #!/usr/bin/env zsh
 
-#
-# install Homebrew packages
-#
-brew install wget
+# Make sure we’re using the latest Homebrew. ###########################
+brew update
+
+
+# Upgrade any already-installed formulae. ##############################
+brew upgrade
+
+
+# install Homebrew packages ############################################
+brew install imagemagick --with-webp
 brew install node
-brew install imagemagick
+brew install wget --with-iri
 
 
-#
-# install Cask
-#
+# install Cask #########################################################
 brew tap phinze/cask
 brew install brew-cask
 
 
-#
-# install Cask packages
-#
+# install Cask packages ################################################
 brew cask install alfred
+brew cask install atom
 brew cask install anvil
 brew cask install appcleaner
 brew cask install codekit
@@ -35,3 +38,7 @@ brew cask install tower
 brew cask install transmit
 brew cask install vlc
 brew cask install ynab
+
+
+# Remove outdated versions from the cellar. ############################
+brew cleanup
