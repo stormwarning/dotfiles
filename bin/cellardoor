@@ -33,12 +33,14 @@ brew cask install atom
 brew cask install anvil
 brew cask install appcleaner
 brew cask install dropbox
+brew cask install ember
 brew cask install firefox
 brew cask install fontprep
 brew cask install google-chrome
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install mamp
+brew cask install monotype-skyfonts
 brew cask install rdio
 brew cask install tower
 brew cask install transmit
