@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 # Ask for the administrator password upfront.
 sudo -v
@@ -19,6 +19,12 @@ brew upgrade
 brew install imagemagick --with-webp
 brew install node
 brew install wget --with-iri
+
+# Install Bash 4.
+# Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
+# running `chsh`.
+brew install bash
+brew install bash-completion
 
 
 # install Cask #########################################################
