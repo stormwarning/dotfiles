@@ -9,7 +9,7 @@ function doIt() {
   rm -r ~/.bashrc
   rm -r ~/.inputrc
   ln -s ~/.dotfiles/shell/bashrc ~/.bashrc
-  ln -s ~/.dotfiles/shell/inpurrc ~/.inputrc
+  ln -s ~/.dotfiles/shell/inputrc ~/.inputrc
 
   rm -r ~/.gitconfig
   rm -r ~/.gitignore
