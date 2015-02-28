@@ -7,7 +7,9 @@
 function doIt() {
   # symlink dotfiles to home directory
   rm -r ~/.bashrc
+  rm -r ~/.inputrc
   ln -s ~/.dotfiles/shell/bashrc ~/.bashrc
+  ln -s ~/.dotfiles/shell/inpurrc ~/.inputrc
 
   rm -r ~/.gitconfig
   rm -r ~/.gitignore
