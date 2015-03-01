@@ -15,6 +15,8 @@ function doIt() {
   rm -r ~/.gitignore
   ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
   ln -s ~/.dotfiles/git/gitignore ~/.gitignore
+
+  source ~/.bashrc
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
