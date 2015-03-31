@@ -6,8 +6,10 @@
 
 function doIt() {
   # symlink dotfiles to home directory
+  rm -r ~/.bash_profile
   rm -r ~/.bashrc
   rm -r ~/.inputrc
+  ln -s ~/.dotfiles/shell/bash_profile ~/.bash_profile
   ln -s ~/.dotfiles/shell/bashrc ~/.bashrc
   ln -s ~/.dotfiles/shell/inputrc ~/.inputrc
 
