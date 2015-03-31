@@ -1,38 +1,37 @@
 #!/usr/bin/env bash
 
-# Ask for the administrator password upfront.
+# sudo and keep-alive #################################################
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until the script has finished.
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 
-# Make sure we’re using the latest Homebrew. ###########################
+# Make sure we’re using the latest Homebrew. ##########################
 brew update
 
 
-# Upgrade any already-installed formulae. ##############################
+# Upgrade any already-installed formulae. #############################
 brew upgrade
 
 
-# install Homebrew packages ############################################
+# Install Homebrew packages. ##########################################
 brew install imagemagick --with-webp
 brew install node
 brew install wget --with-iri
 
-# Install Bash 4.
+# Install Bash 4. #####################################################
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
 brew install bash-completion
 
 
-# install Cask #########################################################
+# Install Cask. #######################################################
 brew tap phinze/cask
 brew install brew-cask
 
 
-# install Cask packages ################################################
+# Install Cask packages. ##############################################
 brew cask install 1password
 brew cask install alfred
 brew cask install atom
@@ -45,6 +44,7 @@ brew cask install fontprep
 brew cask install google-chrome
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install mailbox
 brew cask install mamp
 brew cask install monotype-skyfonts
 brew cask install rdio
@@ -54,5 +54,5 @@ brew cask install vlc
 brew cask install ynab
 
 
-# Remove outdated versions from the cellar. ############################
+# Remove outdated versions from the cellar. ###########################
 brew cleanup
