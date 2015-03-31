@@ -6,6 +6,11 @@ alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
+# jk
+alias such="git"
+alias very="git"
+alias wow="git status"
+
 # Shortcuts
 # alias d="cd ~/Documents/Dropbox"
 # alias dl="cd ~/Downloads"
