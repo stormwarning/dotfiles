@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+# Make sure we’re using the latest npm. ###############################
+npm install -g npm
+
+
+# Upgrade any already-installed packages. #############################
+npm update -g
+
+
+# Install npm tools. ##################################################
+npm install -g bower
+npm install -g gulp
+npm install -g node-sass
+npm install -g yo
+
+npm install -g jshint
+npm install -g jscs
