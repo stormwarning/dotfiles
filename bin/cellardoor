@@ -15,9 +15,16 @@ brew upgrade
 
 
 # Install Homebrew packages. ##########################################
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+
 brew install imagemagick --with-webp
 brew install node
+brew install php55 --with-fpm
+brew install php-code-sniffer # Remember to add wpcs to installed_paths
 brew install wget --with-iri
+brew install wp-cli
 
 # Install Bash 4. #####################################################
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
