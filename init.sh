@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-# cd "$(dirname "${BASH_SOURCE}")";
-
-# git pull origin master;
-
 function doIt() {
   # symlink dotfiles to home directory
   rm -r ~/.bash_profile
