@@ -54,8 +54,10 @@ brew cask install imagealpha
 brew cask install imageoptim
 brew cask install mailbox
 brew cask install mamp
-brew cask install monotype-skyfonts
+brew cask install skyfonts
+brew cask install spectacle
 brew cask install rdio
+brew cask install slack
 brew cask install tower
 brew cask install transmit
 brew cask install vlc
