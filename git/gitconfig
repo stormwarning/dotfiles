@@ -1,16 +1,16 @@
 [alias]
-  #jk
-    rdone = commit -am
-    some = clone
-    down = pull
-  
-  #serious business
-    s = status -s
-    df = diff --color --color-words --abbrev
-    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	#jk
+	rdone = commit -am
+	some = clone
+	down = pull
+
+	#serious business
+	s = status -s
+	df = diff --color --color-words --abbrev
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
 
 [color]
-	ui = always
+	ui = true
 
 [apply]
 	whitespace = fix
@@ -44,20 +44,22 @@
 
 [diff]
 	tool = Kaleidoscope
-	
+
 [difftool]
 	prompt = false
-	
+
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-	
+
 [merge]
 	tool = Kaleidoscope
-	
+
 [mergetool]
 	prompt = false
 	keepBackup = false
-	
+
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
 	trustExitCode = true
+[credential]
+	helper = osxkeychain
