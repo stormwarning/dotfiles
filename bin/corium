@@ -16,5 +16,5 @@ apm install linter-phpcs
 apm install linter-scss-lint
 apm install linter-shellcheck
 apm install linter-tidy
-apm install nuclide-installer
+apm install pigments
 apm install react
