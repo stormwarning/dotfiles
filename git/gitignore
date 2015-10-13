@@ -1,25 +1,15 @@
-#
-# OS files
-#
-
+# OS FILES ============================================================
 .DS_Store
 .DS_Store?
 .AppleDouble
 .LSOverride
 Icon?
 
-# Thumbnails
+## THUMBNAILS
 ._*
 ehthumbs.db
 Thumbs.db
 
-# External disks
+## EXTERNAL DISKS
 .Spotlight-V100
 .Trashes
-
-
-#
-# SASS files
-#
-
-.sass-cache
