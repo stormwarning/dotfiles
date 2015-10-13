@@ -3,6 +3,7 @@
 # Install Atom packages. ##############################################
 apm install docblockr
 apm install editorconfig
+apm install language-jsont
 apm install language-liquid
 apm install linter
 apm install linter-coffeelint
