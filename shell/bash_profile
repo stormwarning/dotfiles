@@ -9,6 +9,9 @@ for file in ~/.dotfiles/shell/{path,bash_prompt,exports,aliases,functions,extra}
 done;
 unset file;
 
+# Load Virtual Env Wrapper
+source "/usr/local/bin/virtualenvwrapper.sh"
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob;
 
