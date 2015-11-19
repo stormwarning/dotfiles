@@ -3,6 +3,8 @@
 # Install Atom packages. ##############################################
 apm install docblockr
 apm install editorconfig
+apm install language-babel
+apm install language-jade
 apm install language-jsont
 apm install language-liquid
 apm install linter
@@ -12,10 +14,8 @@ apm install linter-flint
 apm install linter-flow
 apm install linter-jscs
 apm install linter-jshint
-apm install linter-jsxhint
 apm install linter-phpcs
 apm install linter-scss-lint
 apm install linter-shellcheck
 apm install linter-tidy
 apm install pigments
-apm install react
