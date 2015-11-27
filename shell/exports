@@ -8,4 +8,4 @@ export MANPAGER='less -X';
 export GREP_OPTIONS='--color=auto';
 
 # Python Virtual Environments
-export WORKON_HOME=/Users/jeffnelson/virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs

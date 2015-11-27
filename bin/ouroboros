@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# sudo and keep-alive #################################################
+sudo -v
+
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+# Make sure the full Python package is installed. #####################
+brew install python
+
+
+# Make sure `pip` is up-to-date #######################################
+pip install --upgrade pip setuptools
+
+
+# Install `virtualenv` ################################################
+pip install virtualenv
+pip install virtualenvwrapper
+source /usr/local/bin/virtualenvwrapper.sh

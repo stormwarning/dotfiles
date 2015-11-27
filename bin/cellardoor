@@ -25,6 +25,7 @@ brew install keybase
 brew install node
 brew install php55 --with-fpm
 brew install php-code-sniffer # Remember to add wpcs to installed_paths
+brew install python
 brew install wget --with-iri
 brew install wp-cli
 
