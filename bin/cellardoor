@@ -37,7 +37,7 @@ brew install bash-completion
 
 
 # Install Caskroom. ###################################################
-brew install caskroom/cask/brew-cask
+brew tap caskroom/cask
 
 
 # Install Caskroom packages. ##########################################
@@ -53,16 +53,15 @@ brew cask install fontprep
 brew cask install google-chrome
 brew cask install imagealpha
 brew cask install imageoptim
-brew cask install mailbox
 brew cask install mamp
 brew cask install skyfonts
 brew cask install spectacle
-brew cask install rdio
+brew cask install spotify
+brew cask install sketch
 brew cask install slack
 brew cask install tower
 brew cask install transmit
 brew cask install vlc
-brew cask install ynab
 
 
 # Remove outdated versions from the cellar. ###########################
