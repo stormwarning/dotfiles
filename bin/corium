@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Install Atom packages. ##############################################
+apm install django-templates
 apm install docblockr
 apm install editorconfig
 apm install language-babel
@@ -12,10 +13,11 @@ apm install linter-coffeelint
 apm install linter-eslint
 apm install linter-flint
 apm install linter-flow
-apm install linter-jscs
-apm install linter-jshint
 apm install linter-phpcs
-apm install linter-scss-lint
+apm install linter-pylint
+apm install linter-sass-lint
 apm install linter-shellcheck
 apm install linter-tidy
 apm install pigments
+apm install project-manager
+apm install wakatime
