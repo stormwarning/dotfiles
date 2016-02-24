@@ -8,4 +8,7 @@ export MANPAGER='less -X';
 export GREP_OPTIONS='--color=auto';
 
 # Python Virtual Environments
-export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs;
+
+# GitHub API key for Homebrew
+export HOMEBREW_GITHUB_API_TOKEN='4098b7038c03e687eaaf7a29e4ceeb9c6c1fee2a';

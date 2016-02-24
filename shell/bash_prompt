@@ -2,6 +2,10 @@
 # Screenshot: http://i.imgur.com/EkEtphC.png
 # Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles
 # iTerm → Profiles → Text → use 13pt Monaco with 1.1 vertical spacing.
+#
+# jeff @ env\Razorgirl in ~/.dotfiles
+#  └── master [+↓]
+# → _
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
   export TERM='gnome-256color';
@@ -51,9 +55,9 @@ prompt_git() {
       git rev-parse --short HEAD 2> /dev/null || \
       echo '(unknown)')";
 
-    [ -n "${s}" ] && s=" [${s}]";
+    [ -n "${s}" ] && s="${base06}[${red}${s}${base06}]";
 
-    echo -e " \n${1}[git${base01}:${1}${branchName}]${blue}${s}";
+    echo -e " \n${base03} └── ${1}${branchName} ${reset}${s}";
   else
     return;
   fi;
@@ -65,72 +69,111 @@ if tput setaf 1 &> /dev/null; then
   reset=$(tput sgr0);
 
   # Solarized colors, taken from http://git.io/solarized-colors.
-  base03=$(tput setaf 234);
-  base02=$(tput setaf 235);
-  base01=$(tput setaf 240);
-  base00=$(tput setaf 231);
-  base0=$(tput setaf 244);
-  base1=$(tput setaf 245);
-  base2=$(tput setaf 254);
-  base3=$(tput setaf 230);
+  # base03=$(tput setaf 234);
+  # base02=$(tput setaf 235);
+  # base01=$(tput setaf 240);
+  # base00=$(tput setaf 231);
+  # base0=$(tput setaf 244);
+  # base1=$(tput setaf 245);
+  # base2=$(tput setaf 254);
+  # base3=$(tput setaf 230);
+  #
+  # yellow=$(tput setaf 136);
+  # orange=$(tput setaf 166);
+  # red=$(tput setaf 124);
+  # magenta=$(tput setaf 125);
+  # violet=$(tput setaf 61);
+  # blue=$(tput setaf 33);
+  # cyan=$(tput setaf 37);
+  # green=$(tput setaf 64);
+  #
+  # white=$(tput setaf 15);
+  # black=$(tput setaf 0);
 
-  yellow=$(tput setaf 136);
-  orange=$(tput setaf 166);
-  red=$(tput setaf 124);
-  magenta=$(tput setaf 125);
-  violet=$(tput setaf 61);
-  blue=$(tput setaf 33);
-  cyan=$(tput setaf 37);
-  green=$(tput setaf 64);
 
-  white=$(tput setaf 15);
-  black=$(tput setaf 0);
+  # Base16 Eighties
+  # base00=$(tput setaf);
+  base01=$(tput setaf 0); # black
+  # base02=$(tput setaf);
+  base03=$(tput setaf 8);
+  # base04=$(tput setaf);
+  # base05=$(tput setaf);
+  base06=$(tput setaf 7);
+  base07=$(tput setaf 15); # white
+  base08=$(tput setaf 1); # red
+  # base09=$(tput setaf); # orange
+  base0A=$(tput setaf 3); # yellow
+  base0B=$(tput setaf 2); # green
+  base0C=$(tput setaf 6); # cyan
+  base0D=$(tput setaf 4); # blue
+  base0E=$(tput setaf 5); # purple
+  # base0F=$(tput setaf); # brown
+
+  black=${base01};
+  white=${base07};
+  red=${base08};
+  yellow=${base0A};
+  green=${base0B};
+  cyan=${base0C};
+  blue=${base0D};
+  purple=${base0E};
 else
   bold='';
   reset="\e[0m";
-  black="\e[1;30m";
-  blue="\e[1;34m";
-  cyan="\e[1;36m";
-  green="\e[1;32m";
-  orange="\e[1;33m";
-  purple="\e[1;35m";
-  red="\e[1;31m";
-  violet="\e[1;35m";
+  black="\e[30m";
+  # 01="\e[1;92m";
+  # 02="\e[1;93m";
+  # 03="\e[1;94m";
+  # 04="\e[1;95m";
+  # 05="\e[m";
+  # 06="\e[m";
+  # 07="\e[m";
   white="\e[1;37m";
-  yellow="\e[1;33m";
+
+  red="\e[31m";
+  orange="\e[33m";
+  yellow="\e[33m";
+  green="\e[32m";
+  cyan="\e[36m";
+  blue="\e[34m";
+  magenta="\e[35m";
 fi;
 
 # Highlight the user name when logged in as root.
 if [[ "${USER}" == "root" ]]; then
   userStyle="${red}";
 else
-  userStyle="${orange}";
+  userStyle="${blue}";
 fi;
 
 # Highlight the hostname when connected via SSH.
 if [[ "${SSH_TTY}" ]]; then
   hostStyle="${bold}${red}";
 else
-  hostStyle="${base01}";
+  hostStyle="${cyan}";
 fi;
 
 # Determine active Python virtualenv details.
-if test -z "$VIRTUAL_ENV" ; then
-  PYTHON_VIRTUALENV="";
-else
-  PYTHON_VIRTUALENV="${base1}[env${base01}:${base1}`basename \"$VIRTUAL_ENV\"`]${reset}";
-fi;
+prompt_virtualenv() {
+  [[ -n "$VIRTUAL_ENV" ]] && echo "${purple}${VIRTUAL_ENV##*/}${base03}\\${reset}"
+}
+# if [[ -n "$VIRTUAL_ENV" ]]; then
+#   envStyle="${purple}${VIRTUAL_ENV##*/}${base03}\\${reset}";
+#   # export VIRTUAL_ENV_DISABLE_PROMPT=1;
+# else
+#   envStyle=""
+# fi;
 
 # Set the terminal title to the current working directory.
 PS1="\[\033]0;\w\007\]";
-PS1+="\[${bold}\]\n"; # newline
-# PS1+="\[${userStyle}\]\u"; # username
-# PS1+="\[${white}\] @ ";
+PS1+="\n"; # newline
+PS1+="\[${userStyle}\]\u"; # username
+PS1+="\[${white}\]\[${bold}\] @ \[${reset}\]";
+PS1+="\$(prompt_virtualenv)"; # virtualenv
 PS1+="\[${hostStyle}\]\h"; # host
-PS1+="\[${PYTHON_VIRTUALENV}\]"; # virtualenv
-PS1+="\[${hostStyle}\]: ";
-PS1+="\[${cyan}\]\w"; # working directory
-PS1+="\$(prompt_git \"${violet}\")"; # Git repository details
+PS1+="\[${white}\]\[${bold}\] in \[${reset}\]";
+PS1+="\[${green}\]\w"; # working directory
+PS1+="\$(prompt_git \"${yellow}\")"; # Git repository details
 PS1+="\n";
 PS1+="\[${white}\]→ \[${reset}\]"; # `$` (and reset color)
 export PS1;
