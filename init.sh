@@ -14,6 +14,8 @@ function doIt() {
   ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
   ln -s ~/.dotfiles/git/gitignore ~/.gitignore
 
+  ln -s ~/.dotfiles/conf/tmux.conf ~/.tmux.conf
+
   source ~/.bashrc
 }
 
