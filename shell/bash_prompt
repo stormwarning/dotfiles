@@ -157,6 +157,8 @@ fi;
 prompt_virtualenv() {
   [[ -n "$VIRTUAL_ENV" ]] && echo "${purple}${VIRTUAL_ENV##*/}${base03}\\${reset}"
 }
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 # if [[ -n "$VIRTUAL_ENV" ]]; then
 #   envStyle="${purple}${VIRTUAL_ENV##*/}${base03}\\${reset}";
 #   # export VIRTUAL_ENV_DISABLE_PROMPT=1;
