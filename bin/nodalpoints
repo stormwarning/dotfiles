@@ -9,10 +9,11 @@ npm update -g
 
 
 # Install npm tools. ##################################################
-npm install -g bower
+npm install -g avn avn-n avn-nvm
 npm install -g gulp
-npm install -g node-sass
+npm install -g vsce
 npm install -g yo
 
 npm install -g eslint eslint-config-airbnb
-npm install -g sass-lint
+npm install -g standard
+npm install -g stylelint
