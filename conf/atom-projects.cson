@@ -1,0 +1,235 @@
+[
+  {
+    title: "covenant-health"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/covenant-health"
+    ]
+  }
+  {
+    title: "lsceasements"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/lsceasements"
+      "/Users/jeffnelson/.virtualenvs/lsceasements/lib/python2.7/site-packages"
+    ]
+  }
+  {
+    title: "matt"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/matt"
+    ]
+  }
+  {
+    title: "origamiaccounting"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/origamiaccounting"
+    ]
+  }
+  {
+    title: "simplexmobility"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/simplexmobility"
+    ]
+  }
+  {
+    title: "typeset-site"
+    paths: [
+      "/Users/jeffnelson/Sites/typeset-site"
+    ]
+  }
+  {
+    title: "tidaltheory"
+    paths: [
+      "/Users/jeffnelson/Sites/tidaltheory"
+    ]
+  }
+  {
+    title: ".dotfiles"
+    paths: [
+      "/Users/jeffnelson/.dotfiles"
+    ]
+  }
+  {
+    title: "jwnenergy"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/jwnenergy"
+      "/Users/jeffnelson/.virtualenvs/jwn_energy/lib/python3.5/site-packages"
+    ]
+  }
+  {
+    title: "aupe"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/aupe"
+    ]
+  }
+  {
+    title: "hcom"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/hcom"
+    ]
+  }
+  {
+    title: "globalaid"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/globalaid"
+    ]
+  }
+  {
+    title: "fit-directory"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/fit-directory"
+    ]
+  }
+  {
+    title: "popyeg"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/popyeg"
+    ]
+  }
+  {
+    title: "carbon (simplexmobility styleguide)"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/simplexmobility-styleguide"
+    ]
+  }
+  {
+    title: "django-letterpress"
+    paths: [
+      "/Users/jeffnelson/Sites/django-letterpress"
+    ]
+  }
+  {
+    title: "squarespace-templates"
+    paths: [
+      "/Users/jeffnelson/Sites/_squarespace"
+    ]
+  }
+  {
+    title: "hubot-cindy19f"
+    paths: [
+      "/Users/jeffnelson/Sites/hubot-cindy19f"
+      "/Users/jeffnelson/Sites/infobot-1.5.3"
+    ]
+  }
+  {
+    title: "elevator"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/elevator"
+    ]
+  }
+  {
+    title: "jsont-syntax"
+    paths: [
+      "/Users/jeffnelson/Sites/language-jsont"
+      "/Users/jeffnelson/Sites/jsont-tmbundle"
+    ]
+  }
+  {
+    title: "pandahut"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/pandahut-express"
+    ]
+  }
+  {
+    title: "lift-interactive"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/lift-interactive"
+    ]
+  }
+  {
+    title: "astronautswanted"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/astronautswanted"
+    ]
+  }
+  {
+    title: "paradise-estates"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/paradise-estates"
+    ]
+  }
+  {
+    title: "fringe-festival"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/fringe-festival"
+    ]
+  }
+  {
+    title: "sawridge-inns"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/sawridge-inns"
+    ]
+  }
+  {
+    title: "education-station"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/education-station"
+    ]
+  }
+  {
+    title: "muniware"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/muniware"
+    ]
+  }
+  {
+    title: "generator-dharma"
+    paths: [
+      "/Users/jeffnelson/Dropbox/_dev/generator-dharma"
+    ]
+  }
+  {
+    title: "rivers-gate"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/rivers-gate"
+    ]
+  }
+  {
+    title: "storyengine"
+    group: "Lift"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/storyengine"
+      "/Users/jeffnelson/.virtualenvs/storyengine/lib/python2.7/site-packages"
+    ]
+  }
+  {
+    title: "typeset.css"
+    paths: [
+      "/Users/jeffnelson/Sites/typeset.css"
+    ]
+  }
+  {
+    title: "makesomething"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/makesomething"
+      "/Users/jeffnelson/.virtualenvs/makesomething/lib/python2.7/site-packages"
+    ]
+  }
+  {
+    title: "epcor-tower"
+    paths: [
+      "/Users/jeffnelson/Sites/_lift/epcortower"
+    ]
+  }
+]

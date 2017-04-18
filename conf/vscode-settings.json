@@ -1,0 +1,40 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontFamily": "'Fira Code', mononoki, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 18,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "boundary",
+    "editor.renderControlCharacters": true,
+    "editor.renderIndentGuides": false,
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "window.zoomLevel": 0,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true
+    },
+    "css.validate": false,
+    "scss.validate": false,
+    "terminal.integrated.fontSize": 14,
+    "editor.lineHeight": 32,
+    "workbench.colorTheme": "An Old Hope",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": true,
+    "editor.minimap.renderCharacters": false,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.sortImports.path": "",
+    "python.sortImports.args": [
+        "-rc",
+        "website/",
+        "-sp",
+        "${workspaceRoot}"
+    ],
+    "editor.fontLigatures": true,
+    "javascript.validate.enable": false
+}

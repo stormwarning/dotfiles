@@ -1,0 +1,103 @@
+"*":
+  "activate-power-mode":
+    autoToggle: false
+    particles:
+      size: {}
+      spawnCount: {}
+      totalCount: {}
+    screenShake: {}
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      predefinedColor: "Blue"
+    fonts: {}
+    tabs:
+      compactTabs: true
+      tintedTabBar: true
+    treeView:
+      blendTabs: true
+      compactList: true
+    ui:
+      animations: false
+      panelContrast: true
+  "base16-syntax":
+    scheme: "Ocean"
+  core:
+    disabledPackages: [
+      "linter-jshint"
+      "wordpress-api"
+      "react"
+      "archive-view"
+      "language-ejs"
+      "linter-scss-lint"
+      "linter-sass-lint"
+    ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      "*.dist-info"
+      "*.pyc"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "atom-material-ui"
+      "base16-syntax"
+    ]
+  "django-templates": {}
+  docblockr:
+    deep_indent: true
+    lower_case_primitives: true
+    per_section_indent: true
+    spacer_between_sections: true
+  editor:
+    fontFamily: "mononoki"
+    fontSize: 20
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+  "exception-reporting":
+    userId: "384545ee-2fbf-d14f-9714-9c2d92e62dcb"
+  "file-icons":
+    onChanges: true
+  "isotope-ui":
+    lowContrastTooltip: true
+  "language-babel": {}
+  linter:
+    defaultErrorTab: "Line"
+  "linter-eslint":
+    globalNodePath: "/Users/jeffnelson/.nvm/versions/node/v4.2.2"
+    useGlobalEslint: true
+  "linter-jscs":
+    esnext: true
+    onlyConfig: true
+    verbose: true
+  "linter-jshint":
+    disableWhenNoJshintrcFileInPath: true
+  "linter-phpcs":
+    disableWhenNoConfigFile: true
+    executablePath: "/usr/local/bin/phpcs"
+    phpcsExecutablePath: "/usr/local/bin/phpcs"
+    standard: "WordPress"
+  "linter-pylint": {}
+  "linter-sass-lint":
+    noConfigDisable: true
+  "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
+    executablePath: "/usr/local/bin/scss-lint"
+  "one-dark-ui": {}
+  pigments:
+    groupPaletteColors: "by file"
+    mergeColorDuplicates: true
+  "project-manager":
+    prettifyTitle: false
+    sortBy: "group"
+  react: {}
+  "tree-view":
+    hideVcsIgnoredFiles: false
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
+  "wakatime-hidden":
+    lastInit: 1491586831
+  welcome:
+    showOnStartup: false
