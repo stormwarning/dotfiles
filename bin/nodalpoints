@@ -1,19 +1,37 @@
 #!/usr/bin/env bash
 
-# Make sure we’re using the latest npm. ###############################
-npm install -g npm
+
+# Install Node Version Manager. #######################################
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+command -v nvm
 
 
-# Upgrade any already-installed packages. #############################
+# Install primary Node version. #######################################
+nvm install 6
+
+
+# Ensure npm uses corrrect Python version. ############################
+# See: https://github.com/nodejs/node-gyp/issues/746#issuecomment-281911560
+npm config set python python2.7
+
+
+# Upgrade any already-installed modules. ##############################
 npm update -g
 
 
-# Install npm tools. ##################################################
+# Install Node modules. ###############################################
 npm install -g avn avn-n avn-nvm
+avn setup
+
+npm install -g eslint eslint-config-airbnb eslint-config-standard
 npm install -g gulp
+npm install -g stylelint
 npm install -g vsce
 npm install -g yo
 
-npm install -g eslint eslint-config-airbnb
-npm install -g standard
-npm install -g stylelint
+
+
+
+# Install other Node versions. ########################################
+nvm install 0.10 --reinstall-packages-from=6
+nvm install 4 --reinstall-packages-from=6
