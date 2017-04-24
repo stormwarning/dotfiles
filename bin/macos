@@ -1,0 +1,72 @@
+#!/usr/bin/env bash
+
+
+# See: http://mths.be/macos
+
+
+# Keep-alive: update existing `sudo` time stamp until script has finished
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+
+# General UI/UX #######################################################
+#######################################################################
+
+# Set computer name (as done via System Preferences → Sharing)
+# Prompt for computer name
+echo "Enter computer name: \c"
+read COMPUTER_NAME
+COMPUTER_NAME_NS="${COMPUTER_NAME// /-}"
+
+# Spaces are okay
+sudo scutil --set ComputerName $COMPUTER_NAME
+sudo scutil --set HostName $COMPUTER_NAME
+
+# No spaces for these
+sudo scutil --set LocalHostName $COMPUTER_NAME_NS
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string $COMPUTER_NAME_NS
+
+
+# FINDER ##############################################################
+#######################################################################
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Finder: empty Trash securely by default
+defaults write com.apple.finder EmptyTrashSecurely -bool true
+
+# Finder: disable window and Get Info animations
+defaults write com.apple.finder DisableAllAnimations -bool true
+
+# Finder: allow quitting via ⌘ + Q; doing so will also hide desktop icons
+defaults write com.apple.finder QuitMenuItem -bool true
+
+# Finder: show the ~/Library folder (in OS X Lion)
+chflags nohidden ~/Library
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Use column view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `Nlsv`, `Flwv`
+defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
+
+# Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+
+# TERMINAL ############################################################
+#######################################################################
+
+# Install the colour theme for iTerm
+open "${HOME}/.dotfiles/conf/base16-eighties.dark.itermcolors"
+
+# Don’t display the annoying prompt when quitting iTerm
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
