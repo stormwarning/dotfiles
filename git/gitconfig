@@ -1,65 +1,85 @@
-[alias]
-	#jk
-	rdone = commit -am
-	some = clone
-	down = pull
-
-	#serious business
-	s = status -s
-	df = diff --color --color-words --abbrev
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
-
-[color]
-	ui = true
-
-[apply]
-	whitespace = fix
-
 [user]
-	name = Jeff
-	email = rustyangel@gmail.com
+    name = Jeff
+    email = rustyangel@gmail.com
 
 [core]
-	excludesfile = ~/.gitignore_global
-	whitespace = fix,space-before-tab,tab-in-indent,trailing-space
+    excludesfile = ~/.gitignore_global
+    whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 
-[color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+[alias]
+    # jk
+    rdone = commit -am
+    some = clone
+    down = pull
 
-[color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old = red bold
-	new = green bold
+    s = status -s
+    # Cleaner repo status
 
-[color "status"]
-	added = yellow
-	changed = green
-	untracked = cyan
+    df = diff --color --color-words --abbrev
+
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    # No need for a GUI - a nice, colorful, graphical representation
+    # https://git-scm.com/docs/git-log
+    # via https://medium.com/@payload.dd/thanks-for-the-git-st-i-will-use-this-4da5839a21a4
+
+    prune = fetch --prune
+    # Because I constantly forget how to do this
+    # https://git-scm.com/docs/git-fetch#git-fetch--p
+
+    undo = reset --soft HEAD^
+    # Not quite as common as an amend, but still common
+    # https://git-scm.com/docs/git-reset#git-reset-emgitresetemltmodegtltcommitgt
+
+    stash-all = stash save --include-untracked
+    # We wanna grab those pesky un-added files!
+    # https://git-scm.com/docs/git-stash
+
+[apply]
+    whitespace = fix
+
+[commit]
+    # gpgSign = true
+    # "other people can trust that the changes you've made really were made by you"
+    # https://help.github.com/articles/about-gpg/
+    # https://git-scm.com/docs/git-config#git-config-commitgpgSign
 
 [push]
-	default = simple
+    default = simple
+    # "push the current branch back to the branch whose changes are usually integrated into the current branch"
+    # "refuse to push if the upstream branch’s name is different from the local one"
+    # https://git-scm.com/docs/git-config#git-config-pushdefault
 
 [diff]
-	tool = Kaleidoscope
-
+    tool = Kaleidoscope
 [difftool]
-	prompt = false
-
+    prompt = false
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+    cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 
 [merge]
-	tool = Kaleidoscope
-
+    tool = Kaleidoscope
 [mergetool]
-	prompt = false
-	keepBackup = false
-
+    prompt = false
+    keepBackup = false
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
+    cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+    trustExitCode = true
+
+[color]
+    ui = true
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+
 [credential]
-	helper = osxkeychain
+    helper = osxkeychain
