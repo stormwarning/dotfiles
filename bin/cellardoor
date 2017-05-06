@@ -18,7 +18,6 @@ brew install git
 brew install heroku
 brew install imagemagick --with-webp
 brew install jrnl
-brew install keybase
 brew install mas
 brew install node
 brew install php56 --with-gmp
@@ -60,26 +59,23 @@ brew tap caskroom/cask
 brew cask install 1password
 brew cask install adobe-creative-cloud
 brew cask install alfred
-brew cask alfred link
 brew cask install atom
 brew cask install anvil
 brew cask install appcleaner
 brew cask install backblaze
 brew cask install docker
 brew cask install dropbox
-brew cask install ember
 brew cask install firefox
 brew cask install flux
 brew cask install fontprep
 brew cask install google-chrome
 brew cask install google-drive
-brew cask install heroku-toolbelt
 brew cask install imagealpha
 brew cask install imageoptim
 brew cask install iterm2
+brew cask install keybase
 brew cask install lastpass
 brew cask install mamp
-brew cask install monotype-skyfonts
 brew cask install noun-project
 brew cask install opera
 brew cask install paparazzi
@@ -87,8 +83,9 @@ brew cask install rocket
 brew cask install spectacle
 brew cask install spotify
 brew cask install sketch
+brew cask install skyfonts
 brew cask install slack
-brew cask install sublime-text3
+brew cask install sublime-text
 brew cask install superduper
 brew cask install tower
 brew cask install transmission
