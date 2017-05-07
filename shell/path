@@ -3,7 +3,3 @@
 
 # Add Homebrew's sbin to PATH.
 export PATH="/usr/local/sbin:$PATH"
-
-# Add nvm to PATH.
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
