@@ -168,3 +168,32 @@ function o() {
 function tre() {
     tree -aC -I '.git|node_modules|bower_components' --dirsfirst "$@" | less -FRNX;
 }
+
+
+# Open a tmux session and cd to the project directory of the same name.
+function tlo() {
+    # Just exit if no arguments.
+    if [[ -z "$1" ]]
+    then
+        return
+    fi
+
+    local PROJS=($(find "$HOME"/Sites/* -mindepth 1 -maxdepth 1 -type d))
+    local PROJ_NAME=''
+    local PROJ_DIR=''
+    for dir in "${PROJS[@]}"
+    do
+        if [[ $(basename "$dir") == "$1" ]]
+        then
+            PROJ_NAME=$(basename "$dir")
+            PROJ_DIR="$dir"
+        fi
+    done
+    if [[ -z "$PROJ_NAME" ]]
+    then
+        echo 'Project not found'
+        return
+    fi
+
+    PROJECT="$PROJ_NAME" DIR="$PROJ_DIR" tmuxp load ~/.dotfiles/conf/template.json
+}

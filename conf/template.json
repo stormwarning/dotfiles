@@ -1,0 +1,12 @@
+{
+    "session_name": "${PROJECT}",
+    "start_directory": "${DIR}",
+    "windows": [
+        {
+            "panes": [
+                "blank",
+                "blank"
+            ]
+        }
+    ]
+}
