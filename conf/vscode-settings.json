@@ -50,6 +50,7 @@
   "phpcs.standard": "./phpcs.xml",
   "git.enableSmartCommit": true,
   "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "atomKeymap.promptV3Features": true,
   "stylelint.additionalDocumentSelectors": ["vue"],
   "vetur.colorDecorators.enable": false,
   "vetur.format.css.newline_between_rules": false,
