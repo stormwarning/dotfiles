@@ -53,8 +53,6 @@
   "atomKeymap.promptV3Features": true,
   "stylelint.additionalDocumentSelectors": ["vue"],
   "vetur.colorDecorators.enable": false,
-  "vetur.format.css.newline_between_rules": false,
-  "vetur.format.js.InsertSpaceBeforeFunctionParenthesis": true,
   "vetur.validation.style": false,
   "vetur.validation.script": false
 }
