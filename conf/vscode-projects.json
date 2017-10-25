@@ -1,164 +1,68 @@
 [
-	{
-		"name": "makesomething",
-		"rootPath": "$home/Sites/_lift/makesomething",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "storyengine",
-		"rootPath": "$home/Sites/_lift/storyengine",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "jwnenergy",
-		"rootPath": "$home/Sites/_lift/jwnenergy",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "astronauts-wanted",
-		"rootPath": "$home/Sites/_lift/astronautswanted/wp-content",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "surface",
-		"rootPath": "$home/Sites/_lift/surface",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "epcortower",
-		"rootPath": "$home/Sites/_lift/epcortower",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "edmonton-events",
-		"rootPath": "$home/Sites/_lift/edmonton-events",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "simplexmobility",
-		"rootPath": "$home/Sites/_lift/simplexmobility",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "national-instruments",
-		"rootPath": "$home/Sites/_lift/national-instruments/sharktank",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "clark-builders",
-		"rootPath": "$home/Sites/_lift/clark-builders",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "pandahut-express",
-		"rootPath": "$home/Sites/_lift/pandahut-express",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "paradise-estates",
-		"rootPath": "$home/Sites/_lift/paradise-estates",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "typeset-site",
-		"rootPath": "$home/Sites/typeset-site",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "typeset.css",
-		"rootPath": "$home/Sites/typeset.css",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "stylelint-config-recess-order",
-		"rootPath": "$home/Sites/stylelint-config-recess-order",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "cookie-monster",
-		"rootPath": "$home/Sites/_lift/cookie-monster",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "django-colorbundle",
-		"rootPath": "$home/Sites/django-colorbundle",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "django-letterpress",
-		"rootPath": "$home/Sites/django-letterpress",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "hubot-cindy19f",
-		"rootPath": "$home/Sites/hubot-cindy19f",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "vscode-jsont",
-		"rootPath": "$home/Sites/vscode-jsont",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "language-jsont",
-		"rootPath": "$home/Sites/language-jsont",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "jsont-tmbundle",
-		"rootPath": "$home/Sites/jsont-tmbundle",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "coventry-homes",
-		"rootPath": "$home/Sites/_lift/coventry-homes",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "lift-balloons",
-		"rootPath": "$home/Sites/_lift/lift-balloons",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "100in1day",
-		"rootPath": "$home/Sites/_lift/100in1day",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": "eedc",
-		"rootPath": "$home/Sites/_lift/eedc",
-		"paths": [],
-		"group": ""
-	},
-	{
-		"name": ".dotfiles",
-		"rootPath": "$home/.dotfiles",
-		"paths": [],
-		"group": ""
-	}
+  {
+    "name": "typeset-site",
+    "rootPath": "$home/Sites/typeset-site",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "typeset.css",
+    "rootPath": "$home/Sites/typeset.css",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "stylelint-config-recess-order",
+    "rootPath": "$home/Sites/stylelint-config-recess-order",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "django-colorbundle",
+    "rootPath": "$home/Sites/django-colorbundle",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "django-letterpress",
+    "rootPath": "$home/Sites/django-letterpress",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "hubot-cindy19f",
+    "rootPath": "$home/Sites/hubot-cindy19f",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "vscode-jsont",
+    "rootPath": "$home/Sites/vscode-jsont",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "language-jsont",
+    "rootPath": "$home/Sites/language-jsont",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "jsont-tmbundle",
+    "rootPath": "$home/Sites/jsont-tmbundle",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": ".dotfiles",
+    "rootPath": "$home/.dotfiles",
+    "paths": [],
+    "group": ""
+  },
+  {
+    "name": "web",
+    "rootPath": "$home/Showbie/web",
+    "paths": [],
+    "group": "showbie"
+  }
 ]
