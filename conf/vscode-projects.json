@@ -7,49 +7,49 @@
   },
   {
     "name": "typeset.css",
-    "rootPath": "$home/Sites/typeset.css",
+    "rootPath": "$home/Projects/typeset.css",
     "paths": [],
     "group": ""
   },
   {
     "name": "stylelint-config-recess-order",
-    "rootPath": "$home/Sites/stylelint-config-recess-order",
+    "rootPath": "$home/Projects/stylelint-config-recess-order",
     "paths": [],
     "group": ""
   },
   {
     "name": "django-colorbundle",
-    "rootPath": "$home/Sites/django-colorbundle",
+    "rootPath": "$home/Projects/django-colorbundle",
     "paths": [],
     "group": ""
   },
   {
     "name": "django-letterpress",
-    "rootPath": "$home/Sites/django-letterpress",
+    "rootPath": "$home/Projects/django-letterpress",
     "paths": [],
     "group": ""
   },
   {
     "name": "hubot-cindy19f",
-    "rootPath": "$home/Sites/hubot-cindy19f",
+    "rootPath": "$home/Projects/hubot-cindy19f",
     "paths": [],
     "group": ""
   },
   {
     "name": "vscode-jsont",
-    "rootPath": "$home/Sites/vscode-jsont",
+    "rootPath": "$home/Projects/vscode-jsont",
     "paths": [],
     "group": ""
   },
   {
     "name": "language-jsont",
-    "rootPath": "$home/Sites/language-jsont",
+    "rootPath": "$home/Projects/language-jsont",
     "paths": [],
     "group": ""
   },
   {
     "name": "jsont-tmbundle",
-    "rootPath": "$home/Sites/jsont-tmbundle",
+    "rootPath": "$home/Projects/jsont-tmbundle",
     "paths": [],
     "group": ""
   },
@@ -57,7 +57,13 @@
     "name": ".dotfiles",
     "rootPath": "$home/.dotfiles",
     "paths": [],
-    "group": ""
+    "group": "projects"
+  },
+  {
+    "name": "zazen",
+    "rootPath": "$home/Projects/zazen",
+    "paths": [],
+    "group": "projects"
   },
   {
     "name": "web",
