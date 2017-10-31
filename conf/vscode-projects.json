@@ -70,5 +70,23 @@
     "rootPath": "$home/Showbie/web",
     "paths": [],
     "group": "showbie"
+  },
+  {
+    "name": "showbie-ui",
+    "rootPath": "$home/Showbie/showbie-ui",
+    "paths": [],
+    "group": "showbie"
+  },
+  {
+    "name": "ember-sbe-tooling",
+    "rootPath": "$home/Showbie/ember-sbe-tooling",
+    "paths": [],
+    "group": "showbie"
+  },
+  {
+    "name": "ember-sbe-common",
+    "rootPath": "$home/Showbie/ember-sbe-common",
+    "paths": [],
+    "group": "showbie"
   }
 ]
