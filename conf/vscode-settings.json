@@ -27,7 +27,8 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "**/*.pyc": true
+    "**/*.pyc": true,
+    "tmp/**/*": true
   },
   "git.enableSmartCommit": true,
   "html.format.enable": false,
