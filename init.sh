@@ -10,9 +10,9 @@ function doIt() {
   ln -s ~/.dotfiles/shell/inputrc ~/.inputrc
 
   rm -r ~/.gitconfig
-  rm -r ~/.gitignore
+  rm -r ~/.gitignore_global
   ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
-  ln -s ~/.dotfiles/git/gitignore ~/.gitignore
+  ln -s ~/.dotfiles/git/gitignore ~/.gitignore_global
 
   ln -s ~/.dotfiles/conf/tmux.conf ~/.tmux.conf
 
