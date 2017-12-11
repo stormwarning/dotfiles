@@ -108,6 +108,9 @@ prompt_pure_preprompt_render() {
 	# Initialize the preprompt array.
 	local -a preprompt_parts
 
+    # NodeJS version.
+    preprompt_parts+=('%F{green}⬢ ${prompt_pure_node_version}%f')
+
 	# Set the path.
 	preprompt_parts+=('%F{blue}%~%f')
 
@@ -265,6 +268,10 @@ prompt_pure_async_git_arrows() {
 	command git rev-list --left-right --count HEAD...@'{u}'
 }
 
+prompt_pure_async_node() {
+    echo "$(PATH=$1 command node -v | cut -c2- )"
+}
+
 prompt_pure_async_tasks() {
 	setopt localoptions noshwordsplit
 
@@ -293,6 +300,8 @@ prompt_pure_async_tasks() {
 	unset MATCH MBEGIN MEND
 
 	async_job "prompt_pure" prompt_pure_async_vcs_info $PWD
+
+    async_job "prompt_pure" prompt_pure_async_node "$PATH"
 
 	# # only perform tasks inside git working tree
 	[[ -n $prompt_pure_vcs_info[top] ]] || return
@@ -415,6 +424,10 @@ prompt_pure_async_callback() {
 				fi
 			fi
 			;;
+        prompt_pure_async_node)
+            prompt_pure_node_version=$output
+            prompt_pure_preprompt_render
+            ;;
 	esac
 
 	if (( next_pending )); then
