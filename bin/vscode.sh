@@ -18,12 +18,16 @@ code --install-extension donjayamanne.python
 code --install-extension dustinsanders.an-old-hope-theme-vscode
 code --install-extension emberjs.vscode-ember
 code --install-extension esbenp.prettier-vscode
+code --install-extension felixrieseberg.vsc-ember-cli
 code --install-extension ikappas.phpcs
+code --install-extension joelday.docthis
+code --install-extension josa.ember-related-files
 code --install-extension mrmlnc.vscode-scss
 code --install-extension ms-vscode.atom-keybindings
 # code --install-extension ms-vscode.Theme-MaterialKit
 code --install-extension naumovs.color-highlight
 code --install-extension octref.vetur
+code --install-extension phanitejakomaravolu.emberes6snippets
 code --install-extension shinnn.stylelint
 code --install-extension stormwarning.json-template
 code --install-extension thebarkman.vscode-djaneiro
