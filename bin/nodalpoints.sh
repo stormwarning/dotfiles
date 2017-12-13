@@ -36,6 +36,8 @@ npm install -g stylelint
 npm install -g vsce
 npm install -g yo
 
+npm install -g alfred-emoj
+
 
 
 
