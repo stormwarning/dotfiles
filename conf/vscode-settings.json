@@ -50,6 +50,9 @@
   "python.linting.pylintEnabled": false,
   "python.sortImports.args": ["-sp", "${workspaceRoot}"],
   "python.sortImports.path": "",
+  "remark.format": {
+    "plugins": ["preset-lint-markdown-style-guide", "contributors", "toc"]
+  },
   "scss.scannerExclude": [
     "**/.git",
     "**/node_modules",
