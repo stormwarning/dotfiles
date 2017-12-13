@@ -27,7 +27,7 @@ npm install -g avn avn-n avn-nvm
 avn setup
 
 npm install -g bs
-npm install -g eslint eslint-config-airbnb eslint-config-standard
+npm install -g eslint
 npm install -g gulp
 npm install -g now
 npm install -g np
