@@ -1,116 +1,140 @@
 [
-  {
-    "name": "typeset-site",
-    "rootPath": "$home/Sites/typeset-site",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "typeset.css",
-    "rootPath": "$home/Projects/typeset.css",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "stylelint-config-recess-order",
-    "rootPath": "$home/Projects/stylelint-config-recess-order",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "django-colorbundle",
-    "rootPath": "$home/Projects/django-colorbundle",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "django-letterpress",
-    "rootPath": "$home/Projects/django-letterpress",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "hubot-cindy19f",
-    "rootPath": "$home/Projects/hubot-cindy19f",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "vscode-jsont",
-    "rootPath": "$home/Projects/vscode-jsont",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "language-jsont",
-    "rootPath": "$home/Projects/language-jsont",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "jsont-tmbundle",
-    "rootPath": "$home/Projects/jsont-tmbundle",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": ".dotfiles",
-    "rootPath": "$home/.dotfiles",
-    "paths": [],
-    "group": "projects"
-  },
-  {
-    "name": "zazen",
-    "rootPath": "$home/Projects/zazen",
-    "paths": [],
-    "group": "projects"
-  },
-  {
-    "name": "web",
-    "rootPath": "$home/Showbie/web",
-    "paths": [],
-    "group": "showbie"
-  },
-  {
-    "name": "showbie-ui",
-    "rootPath": "$home/Showbie/showbie-ui",
-    "paths": [],
-    "group": "showbie"
-  },
-  {
-    "name": "ember-sbe-tooling",
-    "rootPath": "$home/Showbie/ember-sbe-tooling",
-    "paths": [],
-    "group": "showbie"
-  },
-  {
-    "name": "ember-sbe-common",
-    "rootPath": "$home/Showbie/ember-sbe-common",
-    "paths": [],
-    "group": "showbie"
-  },
-  {
-    "name": "showbie-sqsp",
-    "rootPath": "$home/Showbie/sqsp",
-    "paths": [],
-    "group": "showbie"
-  },
-  {
-    "name": "showbiestorefront",
-    "rootPath": "$home/Showbie/showbiestorefront",
-    "paths": [],
-    "group": "showbie"
-  },
-  {
-    "name": "cz-adapter-eslint",
-    "rootPath": "$home/Projects/cz-adapter-eslint",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "showbie-branding",
-    "rootPath": "$home/Showbie/showbie-branding",
-    "paths": [],
-    "group": "showbie"
-  }
+	{
+		"name": "typeset-site",
+		"rootPath": "$home/Sites/typeset-site",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "typeset.css",
+		"rootPath": "$home/Projects/typeset.css",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "stylelint-config-recess-order",
+		"rootPath": "$home/Projects/stylelint-config-recess-order",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "django-colorbundle",
+		"rootPath": "$home/Projects/django-colorbundle",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "django-letterpress",
+		"rootPath": "$home/Projects/django-letterpress",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "hubot-cindy19f",
+		"rootPath": "$home/Projects/hubot-cindy19f",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "vscode-jsont",
+		"rootPath": "$home/Projects/vscode-jsont",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "language-jsont",
+		"rootPath": "$home/Projects/language-jsont",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "jsont-tmbundle",
+		"rootPath": "$home/Projects/jsont-tmbundle",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": ".dotfiles",
+		"rootPath": "$home/.dotfiles",
+		"paths": [],
+		"group": "projects"
+	},
+	{
+		"name": "zazen",
+		"rootPath": "$home/Projects/zazen",
+		"paths": [],
+		"group": "projects"
+	},
+	{
+		"name": "web",
+		"rootPath": "$home/Showbie/web",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "showbie-ui",
+		"rootPath": "$home/Showbie/showbie-ui",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "ember-sbe-tooling",
+		"rootPath": "$home/Showbie/ember-sbe-tooling",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "ember-sbe-common",
+		"rootPath": "$home/Showbie/ember-sbe-common",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "showbie-sqsp",
+		"rootPath": "$home/Showbie/sqsp",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "showbiestorefront",
+		"rootPath": "$home/Showbie/showbiestorefront",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "cz-adapter-eslint",
+		"rootPath": "$home/Projects/cz-adapter-eslint",
+		"paths": [],
+		"group": ""
+	},
+	{
+		"name": "showbie-branding",
+		"rootPath": "$home/Showbie/showbie-branding",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "showbie-layout",
+		"rootPath": "$home/Showbie/showbie-layout",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "enchiridion",
+		"rootPath": "$home/Showbie/enchiridion",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "rfcs",
+		"rootPath": "$home/Showbie/rfcs",
+		"paths": [],
+		"group": "showbie"
+	},
+	{
+		"name": "unsupported-browser",
+		"rootPath": "$home/Showbie/unsupported-browser",
+		"paths": [],
+		"group": "showbie"
+	}
 ]
