@@ -16,6 +16,7 @@ brew tap homebrew/homebrew-php
 
 brew install git
 brew install heroku
+brew install hub
 brew install imagemagick --with-webp
 brew install jrnl
 brew install mas
