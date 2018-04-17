@@ -7,7 +7,7 @@
     "editor.fontFamily":
         "'Fira Code', mononoki, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 18,
+    "editor.fontSize": 16,
     "editor.formatOnPaste": false,
     "editor.formatOnSave": true,
     "editor.lineHeight": 36,
@@ -18,10 +18,18 @@
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "none",
-    "editor.rulers": [80, 120],
+    "editor.rulers": [
+        70,
+        80,
+        120
+    ],
     "editor.selectionHighlight": false,
-    "editor.wordWrap": "on",
-    "eslint.validate": ["javascript", "javascriptreact", "vue"],
+    "editor.wordWrap": "off",
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
     "extensions.autoUpdate": false,
     "files.exclude": {
         "**/.git": true,
@@ -33,13 +41,19 @@
         "tmp/**/*": true
     },
     "git.enableSmartCommit": true,
+    "git.inputValidation": "always",
     "html.format.enable": false,
     "javascript.validate.enable": false,
+    "json.format.enable": false,
     "materialTheme.cache.workbench.settings": {
         "themeColours": "Palenight"
     },
     "phpcs.standard": "./phpcs.xml",
-    "prettier.disableLanguages": ["markdown"],
+    "prettier.disableLanguages": [
+        "json",
+        "markdown",
+        "scss"
+    ],
     "prettier.eslintIntegration": true,
     "prettier.semi": false,
     "prettier.singleQuote": true,
@@ -49,10 +63,25 @@
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Path": "/usr/local/bin/flake8",
     "python.linting.pylintEnabled": false,
-    "python.sortImports.args": ["-sp", "${workspaceRoot}"],
+    "python.sortImports.args": [
+        "-sp",
+        "${workspaceRoot}"
+    ],
     "python.sortImports.path": "",
     "remark.format": {
-        "plugins": ["preset-lint-markdown-style-guide", "contributors", "toc"]
+        "plugins": [
+            "preset-lint-markdown-style-guide",
+            "contributors",
+            "github",
+            "toc"
+        ],
+        "settings": {
+            "commonmark": true,
+            "bullet": "-",
+            "listItemIndent": 1,
+            "rule": "-",
+            "ruleSpaces": false
+        }
     },
     "scss.scannerExclude": [
         "**/.git",
@@ -62,10 +91,15 @@
         "**/tmp"
     ],
     "scss.validate": false,
-    "stylelint.additionalDocumentSelectors": ["vue"],
+    "sort-imports.default-sort-style": "ember",
+    "sort-imports.on-save": false,
+    "stylelint.additionalDocumentSelectors": [
+        "vue"
+    ],
     "terminal.external.osxExec": "iTerm.app",
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.lineHeight": 2,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "vetur.colorDecorators.enable": false,
     "vetur.validation.style": false,
     "vetur.validation.script": false,
