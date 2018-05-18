@@ -104,7 +104,7 @@
     "vetur.validation.style": false,
     "vetur.validation.script": false,
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Material Theme",
+    "workbench.colorTheme": "Material Theme Palenight",
     "workbench.iconTheme": "material-icon-theme",
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
