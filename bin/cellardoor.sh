@@ -54,6 +54,7 @@ fi;
 
 # Install Caskroom. ###################################################
 brew tap caskroom/cask
+brew tap caskroom/fonts
 
 
 # Install Caskroom packages. ##########################################
@@ -104,6 +105,12 @@ brew cask install vanilla
 brew cask install visual-studio-code
 brew cask install vlc
 brew cask install webpack-dashboard
+
+brew cask install font-fira-code
+brew cask install font-mononoki
+
+# Install Apple SF Mono here too.
+cp -R /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. /Library/Fonts/
 
 
 # Remove outdated versions from the cellar. ###########################
