@@ -2,8 +2,11 @@
 
 
 # Symlink user settings.
-rm -r ~/Library/App Support/Code/User/settings.json
+rm -r ~/Library/Application\ Support/Code/User/settings.json
+rm -r ~/Library/Application\ Support/Code/User/keybindings.json
+
 ln -s ~/.dotfiles/conf/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/.dotfiles/conf/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
 # Install extensions.
 code --install-extension AndrsDC.base16-themes
