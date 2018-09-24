@@ -32,35 +32,14 @@ prompt pure
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
-for file in ~/.dotfiles/shell/{aliases,functions,extra}; do
+for file in ~/.dotfiles/shell/{aliases,exports,functions,extra}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
+# Add Homebrew's sbin to PATH.
+export PATH="/usr/local/sbin:$PATH"
 
-# This loads nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-
-# place this after nvm initialization!
-autoload -U add-zsh-hook
-load-nvmrc() {
-    local node_version="$(nvm version)"
-    local nvmrc_path="$(nvm_find_nvmrc)"
-
-    if [ -n "$nvmrc_path" ]; then
-        local nvmrc_node_version=$(nvm version "$(cat "${nvmrc_path}")")
-
-        if [ "$nvmrc_node_version" = "N/A" ]; then
-            nvm install
-        elif [ "$nvmrc_node_version" != "$node_version" ]; then
-            nvm use
-        fi
-    elif [ "$node_version" != "$(nvm version default)" ]; then
-        echo "Reverting to nvm default version"
-        nvm use default
-    fi
-}
-add-zsh-hook chpwd load-nvmrc
-load-nvmrc
+# https://github.com/lukechilds/zsh-nvm
+export NVM_AUTO_USE=true
+source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
