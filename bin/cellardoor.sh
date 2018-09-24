@@ -65,7 +65,6 @@ brew cask install anvil
 brew cask install appcleaner
 brew cask install atom
 brew cask install backblaze
-brew cask install caffeine
 brew cask install captain
 brew cask install docker
 brew cask install dropbox
@@ -82,6 +81,7 @@ brew cask install imagealpha
 brew cask install imageoptim
 brew cask install insomnia
 brew cask install iterm2
+brew cask install keepingyouawake
 brew cask install keybase
 brew cask install ksdiff
 brew cask install mamp
