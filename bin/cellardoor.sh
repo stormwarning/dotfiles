@@ -118,17 +118,15 @@ brew cleanup
 
 
 # Install apps from Mac App Store. ####################################
-mas install 918858936 Airmail 3
-mas install 417602904 CloudApp
-mas install 411643860 DaisyDisk
-mas install 422304217 Day One Classic
-mas install 406056744 Evernote
-mas install 435003921 Fantastical
-mas install 671736912 FruitJuice
-mas install 775737590 iA Writer
-mas install 507257563 Sip
-# mas install 407951449 Things
-# mas install 957734279 TogglDesktop
-mas install 1278508951 Trello
-mas install 557168941 Tweetbot
-mas install 494803304 WiFi Explorer
+mas install 918858936  # Airmail 3
+mas install 417602904  # CloudApp
+mas install 411643860  # DaisyDisk
+mas install 422304217  # Day One Classic
+mas install 406056744  # Evernote
+mas install 435003921  # Fantastical
+mas install 671736912  # FruitJuice
+mas install 775737590  # iA Writer
+mas install 507257563  # Sip
+mas install 1278508951 # Trello
+mas install 557168941  # Tweetbot
+mas install 494803304  # WiFi Explorer
