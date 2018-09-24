@@ -38,5 +38,5 @@ code --install-extension waderyan.gitblame
 code --install-extension zhuangtongfa.Material-theme
 
 # Symlink Project Manager extension settings.
-rm -r ~/Library/App Support/Code/User/projects.json
+rm -r ~/Library/Application\ Support/Code/User/projects.json
 ln -s ~/.dotfiles/conf/vscode-projects.json ~/Library/Application\ Support/Code/User/projects.json
