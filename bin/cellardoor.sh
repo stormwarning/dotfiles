@@ -15,6 +15,7 @@ brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 
 brew install git
+brew install gpg
 brew install heroku
 brew install hub
 brew install imagemagick --with-webp
@@ -23,6 +24,7 @@ brew install mas
 brew install node
 brew install php56 --with-gmp
 brew install php-code-sniffer # Remember to add wpcs to installed_paths
+brew install pinentry-mac
 brew install postgresql
 brew install tmux
 brew install reattach-to-user-namespace

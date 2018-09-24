@@ -1,7 +1,7 @@
 [user]
     name = Jeff
     email = rustyangel@gmail.com
-	signingkey = 13065F2FE13C6836E91DE35CC24EB28699660857
+	signingkey = BC0A96F493570C6C
 
 [core]
     excludesfile = ~/.gitignore_global
@@ -39,7 +39,7 @@
     whitespace = fix
 
 [commit]
-    gpgSign = true
+    gpgsign = true
     # "other people can trust that the changes you've made really were made by you"
     # https://help.github.com/articles/about-gpg/
     # https://git-scm.com/docs/git-config#git-config-commitgpgSign
@@ -84,3 +84,5 @@
 
 [credential]
     helper = osxkeychain
+[gpg]
+	program = /usr/local/bin/gpg

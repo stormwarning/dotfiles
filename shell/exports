@@ -15,3 +15,7 @@ export WORKON_HOME=$HOME/.virtualenvs;
 
 # GitHub API key for Homebrew
 export HOMEBREW_GITHUB_API_TOKEN='4098b7038c03e687eaaf7a29e4ceeb9c6c1fee2a';
+
+# Fix `Inappropriate ioctl for device` gpg error.
+# @see https://github.com/keybase/keybase-issues/issues/1712
+export GPG_TTY=$(tty)
