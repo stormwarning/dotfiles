@@ -228,6 +228,14 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 # Show indicator lights for open applications in the Dock
 defaults write com.apple.dock show-process-indicators -bool true
 
+# Remove the auto-hiding Dock delay
+# defaults write com.apple.dock autohide-delay -float 0
+# Remove the animation when hiding/showing the Dock
+# defaults write com.apple.dock autohide-time-modifier -float 0
+
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
@@ -256,6 +264,9 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 
 # SAFARI & WEBKIT #####################################################
 #######################################################################
+
+# Show the full URL in the address bar (note: this still hides the scheme)
+defaults write com.apple.Safari ShowFullURLInSmartSearchField -bool true
 
 # Set Safari’s home page to `about:blank` for faster loading
 defaults write com.apple.Safari HomePage -string "about:blank"
