@@ -58,6 +58,7 @@ fi;
 # Install Caskroom. ###################################################
 brew tap caskroom/cask
 brew tap caskroom/fonts
+brew tap joeyhoer/extras # Tap for SF font.
 
 
 # Install Caskroom packages. ##########################################
@@ -111,6 +112,9 @@ brew cask install webpack-dashboard
 
 brew cask install font-fira-code
 brew cask install font-mononoki
+
+brew cask install font-san-francisco-pro
+brew cask install font-san-francisco-compact
 
 # Install Apple SF Mono here too.
 cp -R /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. /Library/Fonts/
