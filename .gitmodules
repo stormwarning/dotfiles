@@ -40,3 +40,6 @@
 [submodule "ide/phpcs-wp-coding-standards"]
 	path = ide/phpcs-wp-coding-standards
 	url = git@github.com:WordPress-Coding-Standards/WordPress-Coding-Standards.git
+[submodule "shell/tpm"]
+	path = shell/tpm
+	url = git@github.com:tmux-plugins/tpm.git
