@@ -259,3 +259,17 @@ gif-from-tweet() {
     fi
     video-from-tweet $url | video-to-gif - $output
 }
+
+# Clean up local branches
+old-branches() {
+    echo "Try running `git fetch -p` first if this isn‘t doing anything."
+    git branch -vv | awk '/: gone]/{print $1}'
+}
+
+remove-old-branches() {
+    if [[ $1 == 'force' ]]; then
+        old-branches | xargs git branch -D
+    else
+        old-branches | xargs git branch -d
+    fi
+}
