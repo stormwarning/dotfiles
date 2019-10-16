@@ -102,19 +102,19 @@ fi
 # -----------------------------------------------------------------------------
 # NVM
 # -----------------------------------------------------------------------------
-if [ -x nvm ]; then
-	step "Installing NVM…"
-	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-	print_success "NVM installed!"
-	step "Installing latest Node…"
-	nvm install node
-	nvm use node
-	nvm run node --version
-	nodev=$(node -v)
-	print_success "Using Node $nodev!"
-else
-	print_success_muted "NVM/Node already installed. Skipping."
-fi
+# if [ -x nvm ]; then
+# 	step "Installing NVM…"
+# 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+# 	print_success "NVM installed!"
+# 	step "Installing latest Node…"
+# 	nvm install node
+# 	nvm use node
+# 	nvm run node --version
+# 	nodev=$(node -v)
+# 	print_success "Using Node $nodev!"
+# else
+# 	print_success_muted "NVM/Node already installed. Skipping."
+# fi
 
 # -----------------------------------------------------------------------------
 # Homebrew
@@ -132,6 +132,31 @@ if brew list | grep -Fq brew-cask; then
 	step "Uninstalling old Homebrew-Cask…"
 	brew uninstall --force brew-cask
 	print_success "Homebrew-Cask uninstalled!"
+fi
+
+# -----------------------------------------------------------------------------
+# ZSH and NVM
+# -----------------------------------------------------------------------------
+if ! [ -e ~/.zshrc ]; then
+    chapter "Setting up ZSH and NVM…"
+
+    step "Copying zsh prompt configs…"
+    mkdir ~/.zfunctions
+    ln -s ~/.dotfiles/zsh/prompt/pure.zsh ~/.zfunctions/prompt_pure_setup
+    ln -s ~/.dotfiles/zsh/prompt/async.zsh ~/.zfunctions/async
+    ln -s ~/.dotfiles/zsh/zshrc.zsh ~/.zshrc
+
+	source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
+	print_success "ZSH and NVM installed!"
+
+	step "Installing latest Node…"
+	nvm install node
+	nvm use node
+	nvm run node --version
+	nodev=$(node -v)
+	print_success "Using Node $nodev!"
+else
+    print_success_muted "ZSH and NVM already installed. Skipping."
 fi
 
 ###############################################################################
