@@ -2,7 +2,7 @@
 
 step "Installing fonts…"
 
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 brew tap joeyhoer/extras # Tap for SF font.
 
 NERDFONTS=(
