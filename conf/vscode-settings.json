@@ -1,7 +1,6 @@
 {
   "atomKeymap.promptV3Features": true,
   "breadcrumbs.enabled": true,
-  "color-highlight.markerType": "underline",
   "css.validate": false,
   "editor.colorDecorators": false,
   "editor.cursorBlinking": "smooth",
@@ -20,11 +19,30 @@
   "editor.renderIndentGuides": true,
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "none",
-  "editor.rulers": [70, 80, 120],
+  "editor.rulers": [64, 70, 80, 120],
   "editor.selectionHighlight": false,
   "editor.snippetSuggestions": "top",
   "editor.wordWrap": "off",
-  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "eslint.autoFixOnSave": true,
+  "eslint.run": "onType",
+  "eslint.validate": [
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
   "extensions.autoUpdate": false,
   "files.exclude": {
     "**/.git": true,
@@ -32,7 +50,6 @@
     "**/.hg": true,
     "**/.DS_Store": true,
     "**/*.pyc": true,
-    "dist/**/*": true,
     "tmp/**/*": true
   },
   "git.enableSmartCommit": true,
@@ -41,7 +58,7 @@
     "suppressShowKeyBindingsNotice": true
   },
   "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.format": "${authorAgoOrDate}",
+  "gitlens.currentLine.format": "${author}, ${agoOrDate}",
   "gitlens.hovers.currentLine.changes": false,
   "gitlens.hovers.enabled": false,
   "html.format.enable": false,
@@ -49,10 +66,9 @@
   "json.format.enable": false,
   "phpcs.standard": "./phpcs.xml",
   "prettier.disableLanguages": ["json", "markdown", "scss"],
-  "prettier.eslintIntegration": true,
+  // "prettier.eslintIntegration": true,
   "prettier.semi": false,
   "prettier.singleQuote": true,
-  "prettier.stylelintIntegration": true,
   "prettier.trailingComma": "es5",
   "python.formatting.provider": "yapf",
   "python.linting.flake8Enabled": true,
@@ -61,12 +77,7 @@
   "python.sortImports.args": ["-sp", "${workspaceRoot}"],
   "python.sortImports.path": "",
   "remark.format": {
-    "plugins": [
-      "preset-lint-markdown-style-guide",
-      "contributors",
-      "github",
-      "toc"
-    ],
+    "plugins": ["preset-lint-markdown-style-guide", "github", "toc"],
     "settings": {
       "commonmark": true,
       "bullet": "-",
@@ -83,20 +94,32 @@
     "**/tmp"
   ],
   "scss.validate": false,
-  "sort-imports.default-sort-style": "ember",
-  "sort-imports.on-save": false,
+  "sort-imports.default-sort-style": "python",
+  "sort-imports.on-save": true,
   "terminal.external.osxExec": "iTerm.app",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.lineHeight": 2,
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
-  "vetur.colorDecorators.enable": false,
-  "vetur.validation.style": false,
+  "vetur.format.defaultFormatter.css": "none",
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "vetur.format.options.tabSize": 4,
+  "vetur.grammar.customBlocks": {
+    "page-query": "graphql",
+    "static-query": "graphql"
+  },
   "vetur.validation.script": false,
+  "vetur.validation.style": false,
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme Palenight",
   "workbench.iconTheme": "material-icon-theme",
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
