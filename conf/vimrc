@@ -1,0 +1,7 @@
+
+" UI SETTINGS ------------------------------------
+
+syntax enable  " enable syntax highlighting
+
+set number     " display line numbers
+set showcmd    " show command in bottom bar
