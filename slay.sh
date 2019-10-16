@@ -182,6 +182,8 @@ brew update
 if [ -e $cwd/swag/casks ]; then
 	chapter "Installing apps via Homebrew…"
 
+    brew tap homebrew/cask-versions >/dev/null
+
 	for cask in $(<$cwd/swag/casks); do
 	    install_application_via_brew $cask
 	done
