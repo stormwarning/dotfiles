@@ -239,7 +239,7 @@ fi
 # OPTIONAL: Customizations
 ###############################################################################
 chapter "Adding hot sauce…"
-if [ -f "$cwd/.hot-sauce" ]; then
+if [ -e $cwd/.hot-sauce ]; then
 	if ask "Do you want to add hot sauce?" Y; then
 		. "$cwd/.hot-sauce"; printf "\n  You got hot sauce in your bag. 🔥 ${bold}Swag.${normal}\n";
 	else
