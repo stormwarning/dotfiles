@@ -1,7 +1,7 @@
 [user]
     name = Jeff
     email = rustyangel@gmail.com
-	signingkey = BC0A96F493570C6C
+	signingkey = 13065F2FE13C6836E91DE35CC24EB28699660857
 
 [core]
     excludesfile = ~/.gitignore_global

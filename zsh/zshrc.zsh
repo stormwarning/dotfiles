@@ -37,6 +37,8 @@ for file in ~/.dotfiles/shell/{aliases,exports,functions,extra}; do
 done;
 unset file;
 
+source ~/.dotfiles/zsh/input
+
 # Add Homebrew's sbin to PATH.
 export PATH="/usr/local/sbin:$PATH"
 

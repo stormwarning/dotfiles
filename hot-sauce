@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+step "Installing fonts…"
+
+brew tap homebrew/cask-fonts
+brew tap joeyhoer/extras # Tap for SF font.
+
+NERDFONTS=(
+    font-fira-code
+    font-mononoki
+    font-san-francisco-pro
+    font-san-francisco-compact
+)
+
+for font in ${NERDFONTS[@]}; do
+    if [ ! -d ~/Library/Fonts/$font ]; then
+        install_application_via_brew $font
+    else
+        print_muted "${indent}✓ $font already installed. Skipped."
+    fi
+done
+
+if [ ! -d ~/Library/Fonts/SFMono-Regular ]; then
+    printf "${indent}  [↓] SF Mono "
+    cp -R /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. /Library/Fonts/
+    print_in_green "${bold}✓ done!${normal}\n"
+else
+    print_muted "${indent}✓ $font already installed. Skipped."
+fi
