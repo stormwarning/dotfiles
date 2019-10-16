@@ -3,138 +3,210 @@
 		"name": "typeset-site",
 		"rootPath": "$home/Sites/typeset-site",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "typeset.css",
 		"rootPath": "$home/Projects/typeset.css",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "stylelint-config-recess-order",
 		"rootPath": "$home/Projects/stylelint-config-recess-order",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "django-colorbundle",
 		"rootPath": "$home/Projects/django-colorbundle",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "django-letterpress",
 		"rootPath": "$home/Projects/django-letterpress",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "hubot-cindy19f",
 		"rootPath": "$home/Projects/hubot-cindy19f",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "vscode-jsont",
 		"rootPath": "$home/Projects/vscode-jsont",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "language-jsont",
 		"rootPath": "$home/Projects/language-jsont",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "jsont-tmbundle",
 		"rootPath": "$home/Projects/jsont-tmbundle",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": ".dotfiles",
 		"rootPath": "$home/.dotfiles",
 		"paths": [],
-		"group": "projects"
+		"group": "projects",
+		"enabled": true
 	},
 	{
 		"name": "zazen",
 		"rootPath": "$home/Projects/zazen",
 		"paths": [],
-		"group": "projects"
+		"group": "projects",
+		"enabled": true
 	},
 	{
 		"name": "web",
 		"rootPath": "$home/Showbie/web",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "showbie-ui",
 		"rootPath": "$home/Showbie/showbie-ui",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "ember-sbe-tooling",
 		"rootPath": "$home/Showbie/ember-sbe-tooling",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "ember-sbe-common",
 		"rootPath": "$home/Showbie/ember-sbe-common",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "showbie-sqsp",
 		"rootPath": "$home/Showbie/sqsp",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "showbiestorefront",
 		"rootPath": "$home/Showbie/showbiestorefront",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "cz-adapter-eslint",
 		"rootPath": "$home/Projects/cz-adapter-eslint",
 		"paths": [],
-		"group": ""
+		"group": "",
+		"enabled": true
 	},
 	{
 		"name": "showbie-branding",
 		"rootPath": "$home/Showbie/showbie-branding",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "showbie-layout",
 		"rootPath": "$home/Showbie/showbie-layout",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "enchiridion",
 		"rootPath": "$home/Showbie/enchiridion",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "rfcs",
 		"rootPath": "$home/Showbie/rfcs",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
 	},
 	{
 		"name": "unsupported-browser",
 		"rootPath": "$home/Showbie/unsupported-browser",
 		"paths": [],
-		"group": "showbie"
+		"group": "showbie",
+		"enabled": true
+	},
+	{
+		"name": "backpack-tokens",
+		"rootPath": "/Users/jeff/Showbie/backpack-tokens",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "showbie-stylelint-config",
+		"rootPath": "/Users/jeff/Showbie/showbie-stylelint-config",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "showbie-eslint-config",
+		"rootPath": "/Users/jeff/Showbie/showbie-eslint-config",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "socrative-nodejs",
+		"rootPath": "/Users/jeff/Socrative/socrative-nodejs",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "activityservice-python",
+		"rootPath": "/Users/jeff/Socrative/activityservice-python",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "backpack-ember",
+		"rootPath": "/Users/jeff/Showbie/backpack-ember",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "backpack-react",
+		"rootPath": "/Users/jeff/Showbie/backpack-react",
+		"paths": [],
+		"group": "",
+		"enabled": true
 	}
 ]
