@@ -22,7 +22,7 @@ module.exports = {
         fontWeightBold: 'bold',
 
         // line height as a relative unit
-        lineHeight: 1.5,
+        lineHeight: 1.75,
 
         // letter spacing as a relative unit
         letterSpacing: 0,
@@ -71,7 +71,7 @@ module.exports = {
         showWindowControls: '',
 
         // custom padding (CSS format, i.e.: `top right bottom left`)
-        padding: '12px 14px 48px',
+        padding: '12px 14px 36px',
 
         // the full list. if you're going to provide the full color palette,
         // including the 6 x 6 color cubes and the grayscale map, just provide
