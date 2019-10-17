@@ -164,49 +164,56 @@
 		"name": "backpack-tokens",
 		"rootPath": "/Users/jeff/Showbie/backpack-tokens",
 		"paths": [],
-		"group": "",
+		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "showbie-stylelint-config",
 		"rootPath": "/Users/jeff/Showbie/showbie-stylelint-config",
 		"paths": [],
-		"group": "",
+		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "showbie-eslint-config",
 		"rootPath": "/Users/jeff/Showbie/showbie-eslint-config",
 		"paths": [],
-		"group": "",
+		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "socrative-nodejs",
 		"rootPath": "/Users/jeff/Socrative/socrative-nodejs",
 		"paths": [],
-		"group": "",
+		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "activityservice-python",
 		"rootPath": "/Users/jeff/Socrative/activityservice-python",
 		"paths": [],
-		"group": "",
+		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "backpack-ember",
 		"rootPath": "/Users/jeff/Showbie/backpack-ember",
 		"paths": [],
-		"group": "",
+		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "backpack-react",
 		"rootPath": "/Users/jeff/Showbie/backpack-react",
 		"paths": [],
-		"group": "",
+		"group": "showbie",
+		"enabled": true
+	},
+	{
+		"name": "socrative-utils",
+		"rootPath": "/Users/jeff/Socrative/socrative-utils",
+		"paths": [],
+		"group": "showbie",
 		"enabled": true
 	}
 ]
