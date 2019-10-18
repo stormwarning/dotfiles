@@ -1,4 +1,4 @@
-## dotfiles
+# dotfiles
 
 **Note to self:** To recreate the symlinks you do the following from the Home folder:
 
