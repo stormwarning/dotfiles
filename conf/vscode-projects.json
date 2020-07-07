@@ -162,56 +162,77 @@
 	},
 	{
 		"name": "backpack-tokens",
-		"rootPath": "/Users/jeff/Showbie/backpack-tokens",
+		"rootPath": "$home/Showbie/backpack-tokens",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "showbie-stylelint-config",
-		"rootPath": "/Users/jeff/Showbie/showbie-stylelint-config",
+		"rootPath": "$home/Showbie/showbie-stylelint-config",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "showbie-eslint-config",
-		"rootPath": "/Users/jeff/Showbie/showbie-eslint-config",
+		"rootPath": "$home/Showbie/showbie-eslint-config",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "socrative-nodejs",
-		"rootPath": "/Users/jeff/Socrative/socrative-nodejs",
+		"rootPath": "$home/Socrative/socrative-nodejs",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "activityservice-python",
-		"rootPath": "/Users/jeff/Socrative/activityservice-python",
+		"rootPath": "$home/Socrative/activityservice-python",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "backpack-ember",
-		"rootPath": "/Users/jeff/Showbie/backpack-ember",
+		"rootPath": "$home/Showbie/backpack-ember",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "backpack-react",
-		"rootPath": "/Users/jeff/Showbie/backpack-react",
+		"rootPath": "$home/Showbie/backpack-react",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
 	},
 	{
 		"name": "socrative-utils",
-		"rootPath": "/Users/jeff/Socrative/socrative-utils",
+		"rootPath": "$home/Socrative/socrative-utils",
+		"paths": [],
+		"group": "showbie",
+		"enabled": true
+	},
+	{
+		"name": "eslint-plugin-isort",
+		"rootPath": "$home/Projects/eslint-plugin-isort",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "action-release-notification",
+		"rootPath": "$home/Projects/action-release-notification",
+		"paths": [],
+		"group": "",
+		"enabled": true
+	},
+	{
+		"name": "backpack",
+		"rootPath": "$home/Showbie/backpack",
 		"paths": [],
 		"group": "showbie",
 		"enabled": true
