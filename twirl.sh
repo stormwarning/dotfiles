@@ -529,7 +529,9 @@ ssh_key_setup() {
 }
 
 mas_setup() {
-    if mas account > /dev/null; then
+	# `mas account` is not supported in macOS 12+. Just check that the
+	# `mas` command is available.
+    if mas outdated > /dev/null; then
         return 0
     else
         return 1
