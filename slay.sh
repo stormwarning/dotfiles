@@ -150,7 +150,7 @@ if ! [ -e ~/.zshrc ]; then
 	print_success "ZSH and NVM installed!"
 
 	step "Installing latest Node…"
-	nvm install node
+	nvm install node --lts
 	nvm use node
 	nvm run node --version
 	nodev=$(node -v)
