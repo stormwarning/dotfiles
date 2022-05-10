@@ -22,7 +22,7 @@ done
 
 if [ ! -d ~/Library/Fonts/SFMono-Regular ]; then
     printf "${indent}  [↓] SF Mono "
-    cp -R /Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. /Library/Fonts/
+    cp -R /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. /Library/Fonts/
     print_in_green "${bold}✓ done!${normal}\n"
 else
     print_muted "${indent}✓ $font already installed. Skipped."
