@@ -43,6 +43,10 @@ source ~/.dotfiles/zsh/input
 export PATH="/usr/local/sbin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Use gpg-agent instead of entering passphrase every time.
+# @see ~/.gnupg/gpg.conf
+gpgconf --launch gpg-agent
+
 # https://github.com/lukechilds/zsh-nvm
 export NVM_AUTO_USE=true
 source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
