@@ -24,11 +24,13 @@
   "editor.parameterHints.enabled": false,
   "editor.renderControlCharacters": true,
   "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "boundary",
   "editor.rulers": [64, 70, 80, 120],
   "editor.selectionHighlight": false,
   "editor.snippetSuggestions": "top",
   "editor.wordWrap": "off",
   "eslint.run": "onType",
+  "eslint.validate": ["html", "javascript", "javascriptreact", "vue"],
   "extensions.autoUpdate": false,
   "files.associations": {
     "*.ejs": "html"
@@ -41,11 +43,9 @@
     "**/*.pyc": true,
     "tmp/**/*": true
   },
+  "git.enableCommitSigning": true,
   "git.enableSmartCommit": true,
   "git.inputValidation": "always",
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.format": "${author}, ${agoOrDate}",
   "gitlens.hovers.currentLine.changes": false,
@@ -78,9 +78,12 @@
     "**/tmp"
   ],
   "scss.validate": false,
+  "tailwindCSS.includeLanguages": {
+    "vue": "html"
+  },
   "terminal.external.osxExec": "Hyper.app",
   "terminal.integrated.fontSize": 14,
-  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.lineHeight": 1.25,
   "vetur.format.defaultFormatter.css": "none",
   "vetur.format.defaultFormatter.html": "none",
   "vetur.format.defaultFormatter.js": "none",
@@ -121,9 +124,15 @@
   "workbench.editor.centeredLayoutAutoResize": false,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
