@@ -50,3 +50,6 @@ gpgconf --launch gpg-agent
 # https://github.com/lukechilds/zsh-nvm
 export NVM_AUTO_USE=true
 source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '~/Library/Preferences/netlify/helper/path.zsh.inc' && source '~/Library/Preferences/netlify/helper/path.zsh.inc'
