@@ -43,6 +43,7 @@
     "**/*.pyc": true,
     "tmp/**/*": true
   },
+  "git.confirmSync": false,
   "git.enableCommitSigning": true,
   "git.enableSmartCommit": true,
   "git.inputValidation": "always",
