@@ -1,29 +1,11 @@
 #!/usr/bin/env bash
 
-step "Installing fonts…"
+step "Adding configuration files…"
 
-brew tap homebrew/cask-fonts
-brew tap joeyhoer/extras # Tap for SF font.
-
-NERDFONTS=(
-    font-fira-code
-    font-mononoki
-    font-san-francisco-pro
-    font-san-francisco-compact
-)
-
-for font in ${NERDFONTS[@]}; do
-    if [ ! -d ~/Library/Fonts/$font ]; then
-        install_application_via_brew $font
-    else
-        print_muted "${indent}✓ $font already installed. Skipped."
-    fi
-done
-
-if [ ! -d ~/Library/Fonts/SFMono-Regular ]; then
-    printf "${indent}  [↓] SF Mono "
-    cp -R /System/Applications/Utilities/Terminal.app/Contents/Resources/Fonts/. /Library/Fonts/
-    print_in_green "${bold}✓ done!${normal}\n"
+if [[ ! $(cat ~/.gnupg/gpg-agent.conf | grep "pinentry-program") ]]; then
+	echo_install "Configuring gpg-agent"
+	echo "pinentry-program (which pinentry-mac)\n" >> ~/.gnupg/gpg-agent.conf
+	print_in_green "${bold}✓ done!${normal}\n"
 else
-    print_muted "${indent}✓ $font already installed. Skipped."
+	print_success_muted "gpg-agent already configured. Skipped."
 fi
