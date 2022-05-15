@@ -1,6 +1,7 @@
 colortest::colortest
 cssstats-cli::cssstats
 fast-cli::fast
+netlify-cli::netlify
 np::np
 vsce::vsce
 vue-cli::vue
