@@ -1,4 +1,6 @@
 asciinema
+difftastic
+exiftool
 ffmpeg
 gh
 git
@@ -8,6 +10,7 @@ jrnl
 mas
 php-code-sniffer
 pinentry-mac
+pnpm
 postgresql
 tree
 vim
