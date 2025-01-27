@@ -9,3 +9,11 @@ if [[ ! $(cat ~/.gnupg/gpg-agent.conf | grep "pinentry-program") ]]; then
 else
 	print_success_muted "gpg-agent already configured. Skipped."
 fi
+
+if [ -x bun ]; then
+	step "Installing bun…"
+	curl -fsSL https://bun.sh/install | bash
+	print_success "bun installed!"
+else
+	print_success_muted "bun already installed. Skipping."
+fi

@@ -100,28 +100,11 @@ fi
 # fi
 
 # -----------------------------------------------------------------------------
-# NVM
-# -----------------------------------------------------------------------------
-# if [ -x nvm ]; then
-# 	step "Installing NVM…"
-# 	curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-# 	print_success "NVM installed!"
-# 	step "Installing latest Node…"
-# 	nvm install node
-# 	nvm use node
-# 	nvm run node --version
-# 	nodev=$(node -v)
-# 	print_success "Using Node $nodev!"
-# else
-# 	print_success_muted "NVM/Node already installed. Skipping."
-# fi
-
-# -----------------------------------------------------------------------------
 # Homebrew
 # -----------------------------------------------------------------------------
 if ! [ -x "$(command -v brew)" ]; then
 	step "Installing Homebrew…"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 	export PATH="/usr/local/bin:$PATH"
 	print_success "Homebrew installed!"
 else
@@ -135,20 +118,30 @@ if brew list | grep -Fq brew-cask; then
 fi
 
 # -----------------------------------------------------------------------------
-# ZSH and NVM
+# ZSH prompt
 # -----------------------------------------------------------------------------
 if ! [ -e ~/.zshrc ]; then
-    chapter "Setting up ZSH and NVM…"
+	step "Setting up ZSH prompt…"
 
-    step "Copying zsh prompt configs…"
-    mkdir ~/.zfunctions
-    ln -s ~/.dotfiles/zsh/prompt/pure.zsh ~/.zfunctions/prompt_pure_setup
-    ln -s ~/.dotfiles/zsh/prompt/async.zsh ~/.zfunctions/async
-    ln -s ~/.dotfiles/zsh/zshrc.zsh ~/.zshrc
+	mkdir ~/.zfunctions
+	ln -s ~/.dotfiles/zsh/prompt/pure.zsh ~/.zfunctions/prompt_pure_setup
+	ln -s ~/.dotfiles/zsh/prompt/async.zsh ~/.zfunctions/async
+	ln -s ~/.dotfiles/zsh/zshrc.zsh ~/.zshrc
 
+	print_success "ZSH installed!"
+else
+    print_success_muted "ZSH already installed. Skipping."
+fi
+
+# -----------------------------------------------------------------------------
+# NVM
+# -----------------------------------------------------------------------------
+if [ -x nvm ]; then
+	step "Installing NVM…"
+	# Use ZSH plugin to install NVM.
+	# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.40.1/install.sh | bash
 	source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
-	print_success "ZSH and NVM installed!"
-
+	print_success "NVM installed!"
 	step "Installing latest Node…"
 	nvm install node --lts
 	nvm use node
@@ -156,7 +149,7 @@ if ! [ -e ~/.zshrc ]; then
 	nodev=$(node -v)
 	print_success "Using Node $nodev!"
 else
-    print_success_muted "ZSH and NVM already installed. Skipping."
+	print_success_muted "NVM/Node already installed. Skipping."
 fi
 
 ###############################################################################
