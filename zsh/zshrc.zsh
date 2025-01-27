@@ -47,5 +47,25 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 export NVM_AUTO_USE=true
 source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
+# Add Webstorm CLI launcher to PATH.
+export PATH="$PATH:/Applications/WebStorm.app/Contents/MacOS"
+
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '~/Library/Preferences/netlify/helper/path.zsh.inc' && source '~/Library/Preferences/netlify/helper/path.zsh.inc'
+
+# Okta + AWS-CLI
+if [[ -f "$HOME/.okta/bash_functions" ]]; then
+    . "$HOME/.okta/bash_functions"
+fi
+if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
+    PATH="$HOME/.okta/bin:$PATH"
+fi
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/Users/jnelson/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/jnelson/Library/Preferences/netlify/helper/path.zsh.inc'
+# bun completions
+[ -s "/Users/jnelson/.bun/_bun" ] && source "/Users/jnelson/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
