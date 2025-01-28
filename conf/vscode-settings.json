@@ -1,145 +1,207 @@
 {
-  "atomKeymap.promptV3Features": true,
-  "breadcrumbs.enabled": true,
-  "css.validate": false,
-  "debug.toolBarLocation": "docked",
-  "editor.bracketPairColorization.enabled": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "editor.colorDecorators": false,
-  "editor.cursorBlinking": "phase",
-  "editor.cursorStyle": "block",
-  "editor.fontFamily": "MonoLisa, 'SF Mono', 'Fira Code', mononoki, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontLigatures": true,
-  "editor.fontSize": 14,
-  "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
-  "editor.guides.indentation": true,
-  "editor.letterSpacing": 0.25,
-  "editor.lineHeight": 32,
-  "editor.minimap.enabled": true,
-  "editor.minimap.renderCharacters": false,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "editor.parameterHints.enabled": false,
-  "editor.renderControlCharacters": true,
-  "editor.renderLineHighlight": "all",
-  "editor.renderWhitespace": "boundary",
-  "editor.rulers": [64, 70, 80, 120],
-  "editor.selectionHighlight": false,
-  "editor.snippetSuggestions": "top",
-  "editor.wordWrap": "off",
-  "eslint.run": "onType",
-  "eslint.validate": ["html", "javascript", "javascriptreact", "vue"],
-  "extensions.autoUpdate": false,
-  "files.associations": {
-    "*.ejs": "html"
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/.DS_Store": true,
-    "**/*.pyc": true,
-    "tmp/**/*": true
-  },
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "git.enableCommitSigning": true,
-  "git.enableSmartCommit": true,
-  "git.inputValidation": "always",
-  "gitlens.codeLens.enabled": false,
-  "gitlens.currentLine.format": "${author}, ${agoOrDate}",
-  "gitlens.hovers.currentLine.changes": false,
-  "gitlens.hovers.enabled": false,
-  "html.format.enable": false,
-  "javascript.validate.enable": false,
-  "json.format.enable": false,
-  "phpcs.standard": "./phpcs.xml",
-  "prettier.singleQuote": true,
-  "python.formatting.provider": "yapf",
-  "python.linting.flake8Enabled": true,
-  "python.linting.flake8Path": "/usr/local/bin/flake8",
-  "python.linting.pylintEnabled": false,
-  "python.sortImports.args": ["-sp", "${workspaceRoot}"],
-  "python.sortImports.path": "",
-  "remark.format": {
-    "plugins": ["preset-lint-markdown-style-guide", "github", "toc"],
-    "settings": {
-      "commonmark": true,
-      "bullet": "-",
-      "listItemIndent": 1,
-      "rule": "-",
-      "ruleSpaces": false
-    }
-  },
-  "scss.scannerExclude": [
-    "**/.git",
-    "**/node_modules",
-    "**/bower_components",
-    "**/dist",
-    "**/tmp"
-  ],
-  "scss.validate": false,
-  "tailwindCSS.includeLanguages": {
-    "vue": "html"
-  },
-  "terminal.external.osxExec": "Hyper.app",
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.lineHeight": 1.25,
-  "vetur.format.defaultFormatter.css": "none",
-  "vetur.format.defaultFormatter.html": "none",
-  "vetur.format.defaultFormatter.js": "none",
-  "vetur.format.defaultFormatter.postcss": "none",
-  "vetur.format.defaultFormatter.scss": "none",
-  "vetur.format.enable": false,
-  "vetur.format.options.tabSize": 4,
-  "vetur.grammar.customBlocks": {
-    "page-query": "graphql",
-    "static-query": "graphql"
-  },
-  "vetur.validation.script": false,
-  "vetur.validation.style": false,
-  "workbench.colorTheme": "Dracula Pro",
-  "workbench.colorCustomizations": {
-    "[Dracula]": {
-      "breadcrumb.background": "#282a36",
-      "editor.background": "#282a36",
-      "editorGroupHeader.tabsBackground": "#282a36",
-      "panel.background": "#282a36",
-      "sideBar.background": "#282a36",
-      "sideBar.border": "#282a36",
-      "sideBarSectionHeader.background": "#282a36",
-      "sideBarSectionHeader.border": "#282a36",
-      "statusBar.background": "#282a36",
-      "statusBar.border": "#282a36",
-      "statusBar.noFolderBackground": "#282a36",
-      "tab.activeBackground": "#282a36",
-      "tab.border": "#282a36",
-      "tab.inactiveBackground": "#282a36",
-      "terminal.background": "#282a36",
-      "terminal.border": "#282a36",
-      "titleBar.activeBackground": "#282a36",
-      "titleBar.inactiveBackground": "#282a36"
-    }
-  },
-  "workbench.editor.centeredLayoutAutoResize": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.sideBar.location": "right",
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "editor.wordWrap": "wordWrapColumn",
-    "editor.wordWrapColumn": 80
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+	"breadcrumbs.enabled": true,
+	"css.validate": false,
+	"debug.toolBarLocation": "docked",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"editor.accessibilitySupport": "off",
+	"editor.bracketPairColorization.enabled": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+	"editor.colorDecorators": false,
+	"editor.cursorBlinking": "phase",
+	"editor.cursorStyle": "block",
+	"editor.fontFamily": "MonoLisa, 'SF Mono', 'Fira Code', mononoki, Menlo, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"editor.formatOnPaste": false,
+	"editor.formatOnSave": true,
+	"editor.guides.indentation": false,
+	"editor.letterSpacing": 0.25,
+	"editor.lineHeight": 32,
+	"editor.minimap.enabled": true,
+	"editor.minimap.renderCharacters": false,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"editor.parameterHints.enabled": false,
+	"editor.renderControlCharacters": true,
+	"editor.renderLineHighlight": "all",
+	"editor.renderWhitespace": "boundary",
+	"editor.rulers": [64, 70, 80, 120],
+	"editor.selectionHighlight": false,
+	"editor.snippetSuggestions": "top",
+	"editor.wordWrap": "off",
+	"emmet.includeLanguages": {
+		"postcss": "css"
+	},
+	"eslint.probe": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"html",
+		"vue",
+		"markdown",
+		"svelte",
+		"mdx"
+	],
+	"eslint.run": "onType",
+	"eslint.validate": [
+		"html",
+		"javascript",
+		"javascriptreact",
+		"vue",
+		"svelte",
+		"mdx"
+	],
+	"evenBetterToml.formatter.alignEntries": false,
+	"evenBetterToml.formatter.allowedBlankLines": 1,
+	"evenBetterToml.formatter.indentEntries": true,
+	"evenBetterToml.formatter.indentString": "  ",
+	"extensions.autoUpdate": false,
+	"files.associations": {
+		"*.ejs": "html"
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/.DS_Store": true,
+		"**/*.pyc": true,
+		"tmp/**/*": true
+	},
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.enableCommitSigning": true,
+	"git.enableSmartCommit": true,
+	"git.inputValidation": true,
+	"github.copilot.editor.enableAutoCompletions": true,
+	"githubPullRequests.fileListLayout": "flat",
+	"githubPullRequests.pullBranch": "never",
+	"gitlens.advanced.blame.customArguments": [
+		"--ignore-revs-file",
+		".git-blame-ignore-revs"
+	],
+	"gitlens.codeLens.enabled": false,
+	"gitlens.currentLine.format": "${author}, ${agoOrDate}",
+	"gitlens.hovers.currentLine.changes": false,
+	"gitlens.hovers.enabled": false,
+	"html.format.enable": false,
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"javascript.validate.enable": false,
+	"js/ts.implicitProjectConfig.checkJs": true,
+	"json.format.enable": false,
+	"mdx.experimentalLanguageServer": true,
+	"phpcs.standard": "./phpcs.xml",
+	"prettier.requireConfig": true,
+	"prettier.singleQuote": true,
+	"python.formatting.provider": "yapf",
+	"python.linting.flake8Enabled": true,
+	"python.linting.flake8Path": "/usr/local/bin/flake8",
+	"python.linting.pylintEnabled": false,
+	"python.sortImports.args": ["-sp", "${workspaceRoot}"],
+	"python.sortImports.path": "",
+	"remark.format": {
+		"plugins": ["preset-lint-markdown-style-guide", "github", "toc"],
+		"settings": {
+			"commonmark": true,
+			"bullet": "-",
+			"listItemIndent": 1,
+			"rule": "-",
+			"ruleSpaces": false
+		}
+	},
+	"scss.scannerExclude": [
+		"**/.git",
+		"**/node_modules",
+		"**/bower_components",
+		"**/dist",
+		"**/tmp"
+	],
+	"scss.validate": false,
+	"stylelint.packageManager": "pnpm",
+	"svelte.enable-ts-plugin": true,
+	"svelte.plugin.svelte.format.config.svelteIndentScriptAndStyle": false,
+	"tailwindCSS.includeLanguages": {
+		"vue": "html",
+		"svelte": "html"
+	},
+	"terminal.external.osxExec": "Hyper.app",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.lineHeight": 1.25,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"vetur.format.defaultFormatter.css": "none",
+	"vetur.format.defaultFormatter.html": "none",
+	"vetur.format.defaultFormatter.js": "none",
+	"vetur.format.defaultFormatter.postcss": "none",
+	"vetur.format.defaultFormatter.scss": "none",
+	"vetur.format.enable": false,
+	"vetur.format.options.tabSize": 4,
+	"vetur.grammar.customBlocks": {
+		"page-query": "graphql",
+		"static-query": "graphql"
+	},
+	"vetur.validation.script": false,
+	"vetur.validation.style": false,
+	"window.autoDetectColorScheme": false,
+	"workbench.preferredLightColorTheme": "Dracula Pro (Alucard)",
+	"workbench.preferredDarkColorTheme": "Dracula Pro",
+	"workbench.colorTheme": "Dracula Pro",
+	"workbench.colorCustomizations": {
+		"[Dracula]": {
+			"breadcrumb.background": "#282a36",
+			"editor.background": "#282a36",
+			"editorGroupHeader.tabsBackground": "#282a36",
+			"panel.background": "#282a36",
+			"sideBar.background": "#282a36",
+			"sideBar.border": "#282a36",
+			"sideBarSectionHeader.background": "#282a36",
+			"sideBarSectionHeader.border": "#282a36",
+			"statusBar.background": "#282a36",
+			"statusBar.border": "#282a36",
+			"statusBar.noFolderBackground": "#282a36",
+			"tab.activeBackground": "#282a36",
+			"tab.border": "#282a36",
+			"tab.inactiveBackground": "#282a36",
+			"terminal.background": "#282a36",
+			"terminal.border": "#282a36",
+			"titleBar.activeBackground": "#282a36",
+			"titleBar.inactiveBackground": "#282a36"
+		}
+	},
+	"workbench.editor.centeredLayoutAutoResize": false,
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.sideBar.location": "right",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[markdown]": {
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 80
+	},
+	"[mdx]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[postcss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[svelte]": {
+		"editor.defaultFormatter": "svelte.svelte-vscode"
+	},
+	"[toml]": {
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wordWrapColumn": 80
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
