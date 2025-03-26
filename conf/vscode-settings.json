@@ -2,7 +2,7 @@
 	"breadcrumbs.enabled": true,
 	"css.validate": false,
 	"debug.toolBarLocation": "docked",
-	"diffEditor.ignoreTrimWhitespace": false,
+	"diffEditor.ignoreTrimWhitespace": true,
 	"editor.accessibilitySupport": "off",
 	"editor.bracketPairColorization.enabled": false,
 	"editor.codeActionsOnSave": {
@@ -60,7 +60,8 @@
 	"evenBetterToml.formatter.indentString": "  ",
 	"extensions.autoUpdate": false,
 	"files.associations": {
-		"*.ejs": "html"
+		"*.ejs": "html",
+		"*.njk": "html"
 	},
 	"files.exclude": {
 		"**/.git": true,
@@ -169,6 +170,10 @@
 			"titleBar.inactiveBackground": "#282a36"
 		}
 	},
+	"workbench.editorAssociations": {
+		"*.copilotmd": "vscode.markdown.preview.editor",
+		"*.svg": "default"
+	},
 	"workbench.editor.centeredLayoutAutoResize": false,
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.sideBar.location": "right",
@@ -186,6 +191,9 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[postcss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
 	"[svelte]": {
