@@ -8,6 +8,9 @@ rm -r ~/Library/Application\ Support/Code/User/keybindings.json
 ln -s ~/.dotfiles/conf/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s ~/.dotfiles/conf/vscode-keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
 
+# Install Dracula theme.
+code --install-extension ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/visual-studio-code/dracula-pro.vsix
+
 # Install extensions.
 code --install-extension alefragnani.project-manager
 code --install-extension bradlc.vscode-tailwindcss
@@ -20,7 +23,6 @@ code --install-extension GitHub.copilot
 code --install-extension github.vscode-github-actions
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension GraphQL.vscode-graphql
-code --install-extension ikappas.phpcs
 code --install-extension mrmlnc.vscode-scss
 code --install-extension ms-vscode.vscode-typescript-next
 code --install-extension ms-vsliveshare.vsliveshare
@@ -35,6 +37,7 @@ code --install-extension thebarkman.vscode-djaneiro
 code --install-extension unifiedjs.vscode-mdx
 code --install-extension vitest.explorer
 code --install-extension Vue.volar
+code --install-extension wongjn.php-sniffer
 
 # Symlink Project Manager extension settings.
 rm -r ~/Library/Application\ Support/Code/User/projects.json
