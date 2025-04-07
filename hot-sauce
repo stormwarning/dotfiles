@@ -1,14 +1,78 @@
 #!/usr/bin/env bash
 
-step "Adding configuration files…"
 
-if [[ ! $(cat ~/.gnupg/gpg-agent.conf | grep "pinentry-program") ]]; then
-	echo_install "Configuring gpg-agent"
-	echo "pinentry-program (which pinentry-mac)\n" >> ~/.gnupg/gpg-agent.conf
+step "Configuring macOS and applications…"
+
+# if [ -e ./bin/macos.sh ]; then
+# 	cd "$(dirname "${BASH_SOURCE[0]}")" \
+# 		&& . "bin/macos.sh"
+
+# 	echo_install "Configuring macOS"
+# 	configure_macos
+# 	print_in_green "${bold}✓ done!${normal}\n"
+# fi
+
+if [ -e ./bin/dock.sh ]; then
+	cd "$(dirname "${BASH_SOURCE[0]}")" \
+		&& . "bin/dock.sh"
+
+	echo_install "Configuring Dock"
+	configure_dock
 	print_in_green "${bold}✓ done!${normal}\n"
-else
-	print_success_muted "gpg-agent already configured. Skipped."
 fi
+
+if [ -e ./bin/finder.sh ]; then
+	cd "$(dirname "${BASH_SOURCE[0]}")" \
+	&& . "bin/finder.sh"
+
+	echo_install "Configuring Finder"
+	configure_finder
+	print_in_green "${bold}✓ done!${normal}\n"
+fi
+
+if [ -e ./bin/inputs.sh ]; then
+	cd "$(dirname "${BASH_SOURCE[0]}")" \
+		&& . "bin/inputs.sh"
+
+	echo_install "Configuring keyboard & inputs"
+	configure_inputs
+	print_in_green "${bold}✓ done!${normal}\n"
+fi
+
+# if [ -e ./bin/safari.sh ]; then
+# 	cd "$(dirname "${BASH_SOURCE[0]}")" \
+# 		&& . "bin/safari.sh"
+
+# 	echo_install "Configuring Safari"
+# 	configure_safari
+# 	print_in_green "${bold}✓ done!${normal}\n"
+# fi
+
+if [ -e ./bin/screen.sh ]; then
+	cd "$(dirname "${BASH_SOURCE[0]}")" \
+		&& . "bin/screen.sh"
+
+	echo_install "Configuring screen options"
+	configure_screen
+	print_in_green "${bold}✓ done!${normal}\n"
+fi
+
+if [ -e ./bin/transmission.sh ]; then
+	cd "$(dirname "${BASH_SOURCE[0]}")" \
+		&& . "bin/transmission.sh"
+
+	echo_install "Configuring Transmission"
+	configure_transmission
+	print_in_green "${bold}✓ done!${normal}\n"
+fi
+
+# if [[ ! $(cat ~/.gnupg/gpg-agent.conf | grep "pinentry-program") ]]; then
+# 	echo_install "Configuring gpg-agent"
+# 	echo "pinentry-program (which pinentry-mac)\n" >> ~/.gnupg/gpg-agent.conf
+# 	print_in_green "${bold}✓ done!${normal}\n"
+# else
+# 	print_success_muted "gpg-agent already configured. Skipped."
+# fi
 
 if [ -x bun ]; then
 	step "Installing bun…"
@@ -17,3 +81,6 @@ if [ -x bun ]; then
 else
 	print_success_muted "bun already installed. Skipping."
 fi
+
+ln -s ~/.dotfiles/conf/zed-settings.json ~/.config/zed/settings.json
+cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/zed/dracula_pro.json ~/.config/zed/themes
