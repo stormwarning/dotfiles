@@ -1,7 +1,7 @@
 [user]
     name = Jeff
     email = rustyangel@gmail.com
-	signingkey = 13065F2FE13C6836E91DE35CC24EB28699660857
+	signingkey = ~/.ssh/id_rsa.pub
 
 [core]
     excludesfile = ~/.gitignore_global
@@ -51,7 +51,7 @@
     # https://git-scm.com/docs/git-config#git-config-pushdefault
 
 [diff]
-    tool = Kaleidoscope
+    external = difft
 [difftool]
     prompt = false
 [difftool "Kaleidoscope"]
@@ -85,7 +85,7 @@
 [credential]
     helper = osxkeychain
 [gpg]
-	program = /usr/local/bin/gpg
+	format = ssh
 [filter "lfs"]
         clean = git-lfs clean -- %f
         smudge = git-lfs smudge -- %f
