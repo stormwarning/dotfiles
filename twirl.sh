@@ -548,6 +548,7 @@ gem_install_or_update() {
 }
 
 install_brews() {
+	# @todo Issue with this line? "binary operator expected"
     if test ! $(brew list | grep $brew); then
         echo_install "Installing $brew"
 		brew install $brew >/dev/null

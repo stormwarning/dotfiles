@@ -73,15 +73,16 @@ chapter "Installing Dependencies…"
 
 # -----------------------------------------------------------------------------
 # XCode
+# @todo Fix check for existing xcode-select installation.
 # -----------------------------------------------------------------------------
-if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
-	test -d "${xpath}" && test -x "${xpath}" ; then
-	print_success_muted "Xcode already installed. Skipping."
-else
-	step "Installing Xcode…"
-	xcode-select --install
-	print_success "Xcode installed!"
-fi
+# if type xcode-select >&- && xpath=$( xcode-select --print-path ) &&
+# 	test -d "${xpath}" && test -x "${xpath}" ; then
+# 	print_success_muted "Xcode already installed. Skipping."
+# else
+# 	step "Installing Xcode…"
+# 	xcode-select --install
+# 	print_success "Xcode installed!"
+# fi
 
 # if [ ! -d "$HOME/.bin/" ]; then
 # 	mkdir "$HOME/.bin"
@@ -134,22 +135,23 @@ else
 fi
 
 # -----------------------------------------------------------------------------
-# NVM
+# FNM
 # -----------------------------------------------------------------------------
-if [ -x nvm ]; then
-	step "Installing NVM…"
+if [ -x fnm ]; then
+	step "Installing fnm…"
+	brew install fnm
 	# Use ZSH plugin to install NVM.
 	# curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.40.1/install.sh | bash
-	source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
-	print_success "NVM installed!"
+	# source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
+	print_success "fnm installed!"
 	step "Installing latest Node…"
-	nvm install node --lts
-	nvm use node
-	nvm run node --version
+	fnm install --lts
+	# nvm use node
+	# nvm run node --version
 	nodev=$(node -v)
 	print_success "Using Node $nodev!"
 else
-	print_success_muted "NVM/Node already installed. Skipping."
+	print_success_muted "fnm/Node already installed. Skipping."
 fi
 
 ###############################################################################
@@ -175,8 +177,6 @@ brew update
 if [ -e $cwd/swag/casks ]; then
 	chapter "Installing apps via Homebrew…"
 
-    brew tap homebrew/cask-versions >/dev/null
-    brew tap homebrew/cask-fonts >/dev/null
 
 	for cask in $(<$cwd/swag/casks); do
 	    install_application_via_brew $cask

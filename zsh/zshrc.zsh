@@ -43,9 +43,13 @@ source ~/.dotfiles/zsh/input
 export PATH="/usr/local/sbin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Automatic fnm version switching.
+# https://github.com/Schniz/fnm?tab=readme-ov-file#zsh)
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 # https://github.com/lukechilds/zsh-nvm
-export NVM_AUTO_USE=true
-source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
+# export NVM_AUTO_USE=true
+# source ~/.dotfiles/zsh/zsh-nvm/zsh-nvm.plugin.zsh
 
 # Add Webstorm CLI launcher to PATH.
 export PATH="$PATH:/Applications/WebStorm.app/Contents/MacOS"
@@ -61,10 +65,8 @@ if [[ -d "$HOME/.okta/bin" && ":$PATH:" != *":$HOME/.okta/bin:"* ]]; then
     PATH="$HOME/.okta/bin:$PATH"
 fi
 
-# The next line updates PATH for Netlify's Git Credential Helper.
-test -f '/Users/jnelson/Library/Preferences/netlify/helper/path.zsh.inc' && source '/Users/jnelson/Library/Preferences/netlify/helper/path.zsh.inc'
 # bun completions
-[ -s "/Users/jnelson/.bun/_bun" ] && source "/Users/jnelson/.bun/_bun"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
