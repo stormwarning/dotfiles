@@ -7,6 +7,9 @@
     excludesfile = ~/.gitignore_global
     whitespace = fix,space-before-tab,tab-in-indent,trailing-space
 
+[init]
+	defaultBranch = main
+
 [alias]
     # jk
     rdone = commit -am
