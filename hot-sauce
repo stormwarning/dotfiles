@@ -82,5 +82,13 @@ else
 	print_success_muted "bun already installed. Skipping."
 fi
 
+if [ -x cargo ]; then
+	step "Installing Rust via rustup…"
+	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+	print_success "Rust installed!"
+else
+	print_success_muted "Rust already installed. Skipping."
+fi
+
 ln -s ~/.dotfiles/conf/zed-settings.json ~/.config/zed/settings.json
 cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/zed/dracula_pro.json ~/.config/zed/themes
