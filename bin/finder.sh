@@ -23,7 +23,8 @@ configure_finder() {
 	defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 	# Remove duplicates in the “Open With” menu (also see `lscleanup` alias).
-	/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
+	# "The -kill option has been removed because it was dangerous and no longer useful."
+	# /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user
 
 	# Allow quitting via ⌘ + Q; doing so will also hide desktop icons.
 	# defaults write com.apple.finder QuitMenuItem -bool true
