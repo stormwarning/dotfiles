@@ -90,5 +90,16 @@ else
 	print_success_muted "Rust already installed. Skipping."
 fi
 
+step "Linking config files…"
+
+rm -r ~/.gitconfig
+rm -r ~/.gitignore_global
+ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/git/gitignore ~/.gitignore_global
+
+cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/rio/dracula-pro.toml ~/.config/rio/themes
+
 ln -s ~/.dotfiles/conf/zed-settings.json ~/.config/zed/settings.json
 cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/zed/dracula_pro.json ~/.config/zed/themes
+
+print_success "Config files symlinked!"
