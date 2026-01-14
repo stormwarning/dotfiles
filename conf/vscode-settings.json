@@ -145,9 +145,6 @@
 	"vetur.validation.script": false,
 	"vetur.validation.style": false,
 	"window.autoDetectColorScheme": false,
-	"workbench.preferredLightColorTheme": "Dracula Pro (Alucard)",
-	"workbench.preferredDarkColorTheme": "Dracula Pro",
-	"workbench.colorTheme": "Dracula Pro",
 	"workbench.colorCustomizations": {
 		"[Dracula]": {
 			"breadcrumb.background": "#282a36",
@@ -170,12 +167,16 @@
 			"titleBar.inactiveBackground": "#282a36"
 		}
 	},
+	"workbench.colorTheme": "Dracula Pro",
 	"workbench.editorAssociations": {
 		"*.copilotmd": "vscode.markdown.preview.editor",
 		"*.svg": "default"
 	},
 	"workbench.editor.centeredLayoutAutoResize": false,
+	"workbench.fontAliasing": "auto",
 	"workbench.iconTheme": "material-icon-theme",
+	"workbench.preferredLightColorTheme": "Dracula Pro (Alucard)",
+	"workbench.preferredDarkColorTheme": "Dracula Pro",
 	"workbench.sideBar.location": "right",
 	"[javascript]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
