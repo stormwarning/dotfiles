@@ -1,34 +1,34 @@
 {
 	"terminal": {
-		"dock": "right"
+		"dock": "right",
 	},
 	"edit_predictions": {
 		"mode": "subtle",
 		"copilot": {
 			"proxy": null,
-			"proxy_no_verify": null
+			"proxy_no_verify": null,
 		},
-		"enabled_in_text_threads": false
+		"enabled_in_text_threads": false,
 	},
 	"notification_panel": {
-		"dock": "left"
+		"dock": "left",
 	},
 	"outline_panel": {
-		"dock": "right"
+		"dock": "right",
 	},
 	"git_panel": {
-		"dock": "right"
+		"dock": "right",
 	},
 	"agent": {
 		"default_model": {
-			"provider": "zed.dev",
-			"model": "claude-3-7-sonnet"
+			"provider": "anthropic",
+			"model": "claude-sonnet-4-5-latest",
 		},
 		"model_parameters": [],
-		"dock": "right"
+		"dock": "right",
 	},
 	"code_actions_on_format": {
-		"source.fixAll.eslint": true
+		"source.fixAll.eslint": true,
 	},
 	"file_types": {
 		"JSONC": [
@@ -36,33 +36,36 @@
 			"**/zed/**/*.json",
 			"**/Zed/**/*.json",
 			"**/.vscode/**/*.json",
-			"**/jsconfig.json"
+			"**/jsconfig.json",
 		],
-		"Jinja2": ["*.njk"]
+		"Nunjucks": ["*.njk"],
 	},
 	"project_panel": {
-		"dock": "right"
+		"dock": "right",
 	},
 	"prettier": {
-		"allowed": true
+		"allowed": true,
 	},
 	"scroll_beyond_last_line": "vertical_scroll_margin",
 	"vertical_scroll_margin": 12,
 	"show_whitespaces": "boundary",
+	"indent_guides": {
+		"enabled": false,
+	},
 	"hard_tabs": true,
 	"tab_size": 4,
 	"buffer_font_family": "MonoLisa",
-	"buffer_font_size": 14,
+	"buffer_font_size": 14.0,
 	"buffer_line_height": "comfortable",
 	"theme": {
 		"mode": "dark",
 		"light": "Dracula Pro (Alucard)",
-		"dark": "Dracula Pro"
+		"dark": "Dracula Pro",
 	},
 	"ui_font_fallbacks": null,
 	"ui_font_family": "Iosevka Aile",
 	"ui_font_features": {
-		"calt": false
+		"calt": false,
 	},
 	"ui_font_size": 14,
 	"ui_font_weight": 400,
@@ -72,10 +75,36 @@
 	// 4. Max TS length
 	// 5. Max CSS/Python length
 	"wrap_guides": [50, 72, 80, 100, 120],
+	"context_servers": {
+		"netlify": {
+			"command": "npx",
+			"args": ["-y", "@netlify/mcp"],
+		},
+		"nuxt": {
+			"command": "npx",
+			"args": ["mcp-remote", "https://nuxt.com/mcp"],
+			"env": {},
+		},
+	},
+	"lsp": {
+		"rust-analyzer": {
+			"initialization_options": {
+				"rustfmt": {
+					"hard_tabs": true,
+					"brace_style": "AlwaysNextLine",
+					// "extraArgs": [["hard_tabs", "true"]]
+				},
+			},
+		},
+	},
 	"languages": {
 		"Markdown": {
 			// "preferred_line_length": null,
-			"soft_wrap": "bounded"
-		}
-	}
+			"soft_wrap": "bounded",
+		},
+		"Rust": {
+			"formatter": "language_server",
+			"format_on_save": "on",
+		},
+	},
 }
