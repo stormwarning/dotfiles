@@ -1,0 +1,3 @@
+## JSON files parsed as JSONC
+vscode.*.json linguist-language=jsonc
+zed-settings.json  linguist-language=jsonc
