@@ -136,6 +136,8 @@ padding-y = [16, 16]
 # opacity = 1.0
 # blur = false
 # decorations = "enabled"
+[window]
+macos-use-unified-titlebar = true
 
 # Renderer
 #
