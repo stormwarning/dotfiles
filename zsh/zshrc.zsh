@@ -26,8 +26,9 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlightin
 fpath=( "$HOME/.zfunctions" $fpath )
 
 autoload -U promptinit; promptinit
-prompt pure
+# prompt pure
 
+eval "$(starship init zsh)"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -74,3 +75,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Add Cargo to PATH.
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# Add Claude Code install location to PATH.
+export PATH="$HOME/.local/bin:$PATH"
