@@ -97,6 +97,9 @@ rm -r ~/.gitignore_global
 ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/git/gitignore ~/.gitignore_global
 
+rm -r ~/.config/starship.toml
+cp ~/.dotfiles/conf/starship.toml ~/.config/starship.toml
+
 cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/rio/dracula-pro.toml ~/.config/rio/themes
 
 ln -s ~/.dotfiles/conf/zed-settings.json ~/.config/zed/settings.json
