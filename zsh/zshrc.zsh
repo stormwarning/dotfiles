@@ -28,8 +28,6 @@ fpath=( "$HOME/.zfunctions" $fpath )
 autoload -U promptinit; promptinit
 # prompt pure
 
-eval "$(starship init zsh)"
-
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -43,6 +41,8 @@ source ~/.dotfiles/zsh/input
 # Add Homebrew's sbin to PATH.
 export PATH="/usr/local/sbin:$PATH"
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+eval "$(starship init zsh)"
 
 # Automatic fnm version switching.
 # https://github.com/Schniz/fnm?tab=readme-ov-file#zsh)
