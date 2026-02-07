@@ -190,8 +190,8 @@ padding-y = [16, 16]
 # will always look for regular font bounds whene
 #
 # You can also set family on root to overwrite all fonts.
-# [fonts]
-# family = "cascadiamono"
+[fonts]
+family = "Iosevka Nerd Font"
 #
 # You can also specify extra fonts to load
 # [fonts]
@@ -216,7 +216,7 @@ padding-y = [16, 16]
 #
 # Simple example:
 # [fonts]
-# size = 18
+size = 16
 #
 # [fonts.regular]
 # family = "cascadiamono"
