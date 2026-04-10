@@ -15,29 +15,48 @@
 # Theme
 #
 # It makes Rio look for the specified theme in the themes folder
-# (macos and linux: ~/.config/rio/themes/dracula.toml)
+# (macos: ~/.config/rio/themes/dracula.toml)
+# (linux: $XDG_HOME_CONFIG/rio/themes/dracula.toml or ~/.config/rio/themes/dracula.toml)
 # (windows: C:\Users\USER\AppData\Local\rio\themes\dracula.toml)
 #
 # Example:
 # theme = "dracula"
 theme = 'dracula-pro'
 
-# Padding-x
+# Margin
 #
-# define x axis padding (default is 0)
+# Define outer margin around the window/tab area using CSS-like syntax
+# [all] - Apply same margin to all sides
+# [top/bottom, left/right] - Apply vertical and horizontal margin
+# [top, right, bottom, left] - Apply individual margin to each side
+# (default is [10])
 #
-# Example:
-# padding-x = 10
-padding-x = 16
+# Examples:
+# margin = [10]           # 10px on all sides
+# margin = [10, 5]        # 10px top/bottom, 5px left/right
+# margin = [10, 5, 15, 20] # 10px top, 5px right, 15px bottom, 20px left
 
-# Padding-y
+# Panel Configuration
 #
-# define y axis padding based on a format [top, bottom]
-# (default is [0, 0])
+# Configure layout for split panels (when using vertical/horizontal splits)
+#
+# panel.margin - Margin inside each panel (around terminal content)
+# panel.row-gap - Vertical spacing between panels when split down
+# panel.column-gap - Horizontal spacing between panels when split right
+#
+# Defaults:
+# [panel]
+# margin = [5]
+# row-gap = 0
+# column-gap = 0
 #
 # Example:
-# padding-y = [30, 10]
-padding-y = [16, 16]
+# [panel]
+# margin = [5]        # Margin inside panels
+# row-gap = 10        # Vertical gap between panels
+# column-gap = 15     # Horizontal gap between panels
+[panel]
+margin = [16]
 
 # Option as Alt
 #
@@ -128,6 +147,21 @@ padding-y = [16, 16]
 #
 # • decorations - Set window decorations, options: "Enabled", "Disabled", "Transparent", "Buttonless"
 #
+# • colorspace - Set the color space for the window
+#     - "srgb" (default on non-macOS)
+#     - "display-p3" (default on macOS)
+#     - "rec2020"
+#
+# • macos-traffic-light-position-x - Set the x position of the macOS traffic light buttons
+#     Position is in points from the left edge of the window
+#     Note: This setting is ignored when navigation mode is "Tab"
+#     Default: Not set (uses macOS default positioning)
+#
+# • macos-traffic-light-position-y - Set the y position of the macOS traffic light buttons
+#     Position is in points from the top edge of the window
+#     Note: This setting is ignored when navigation mode is "Tab"
+#     Default: Not set (uses macOS default positioning)
+#
 # Example:
 # [window]
 # width = 600
@@ -136,8 +170,9 @@ padding-y = [16, 16]
 # opacity = 1.0
 # blur = false
 # decorations = "enabled"
-[window]
-macos-use-unified-titlebar = true
+# colorspace = "display-p3"
+# macos-traffic-light-position-x = 9.0
+# macos-traffic-light-position-y = 9.0
 
 # Renderer
 #
@@ -179,10 +214,15 @@ macos-use-unified-titlebar = true
 # disable-ctlseqs-alt - Disable ctlseqs with ALT keys
 #   - For example: Terminal.app does not deal with ctlseqs with ALT keys
 #
+# ime-cursor-positioning - Enable IME cursor positioning
+#   - When enabled, the IME input popup will appear at the cursor position
+#   - Default is true
+#
 # Example:
 # [keyboard]
 # use-kitty-keyboard-protocol = false
 # disable-ctlseqs-alt = false
+# ime-cursor-positioning = true
 
 # Fonts
 #
@@ -192,8 +232,8 @@ macos-use-unified-titlebar = true
 # will always look for regular font bounds whene
 #
 # You can also set family on root to overwrite all fonts.
-[fonts]
-family = "Iosevka Nerd Font"
+# [fonts]
+# family = "cascadiamono"
 #
 # You can also specify extra fonts to load
 # [fonts]
@@ -218,7 +258,7 @@ family = "Iosevka Nerd Font"
 #
 # Simple example:
 # [fonts]
-size = 16
+# size = 18
 #
 # [fonts.regular]
 # family = "cascadiamono"
@@ -239,6 +279,9 @@ size = 16
 # family = "cascadiamono"
 # style = "Italic"
 # weight = 800
+[fonts]
+family = "Iosevka Nerd Font"
+size = 16
 
 # Scroll
 #
@@ -260,22 +303,20 @@ size = 16
 #
 # "mode" - Define navigation mode
 #   • NativeTab (MacOS only)
-#   • Bookmark
-#   • BottomTab
-#   • TopTab
+#   • Tab
 #   • Plain
 #
 # "hide-if-single" - Hide navigation UI if is single.
 # "clickable" - Enable click on tabs to switch.
-# "use-current-path" - Use same path whenever a new tab is created (Note: requires `use-fork` to be set to false).
+# "current-working-directory" - Show current working directory in navigation.
 # "color-automation" - Set a specific color for the tab whenever a specific program is running, or in a specific directory.
 #
 # Example:
 # [navigation]
-# mode = "bookmark"
+# mode = "Tab"
 # clickable = false
 # hide-if-single = true
-# use-current-path = false
+# current-working-directory = true
 # color-automation = []
 
 # Shell
@@ -322,8 +363,8 @@ size = 16
 # background = '#0F0D0E'
 # foreground = '#F9F4DA'
 # cursor = '#F38BA3'
-# tabs = '#443d40'
-# tabs-active = '#F38BA3'
+# tabs = '#cccccc'  # Inactive tab text and border color (matches Hyper)
+# tabs-active = '#ffffff'  # Active tab text color (matches Hyper)
 # green = '#0BA95B'
 # red = '#ED203D'
 # blue = '#12B5E5'
@@ -332,14 +373,12 @@ size = 16
 # Bindings
 #
 # Create custom Key bindings for Rio terminal
-# More information in: https://raphamorim.io/rio/docs/key-bindings
-#
 # Example:
 # [bindings]
 # keys = [
 #   { key = "q", with = "super", action = "Quit" },
-#   # Bytes[27, 91, 53, 126] is equivalent to "\x1b[5~"
-#   { key = "home", with = "super | shift", bytes = [27, 91, 53, 126] }
+#   # Send escape sequence to clear screen
+#   { key = "l", with = "control", esc = "\u001b[2J\u001b[H" }
 # ]
 
 # Platform
