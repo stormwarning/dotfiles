@@ -1,4 +1,26 @@
 {
+	"cursor_blink": true,
+	"cursor_shape": "block",
+	"agent_servers": {
+		"goose": {
+			"type": "registry",
+		},
+		"opencode": {
+			"favorite_config_option_values": {
+				"model": [
+					"github-copilot/claude-opus-4.6",
+					"github-copilot/claude-sonnet-4.6",
+				],
+			},
+			"type": "registry",
+		},
+		"github-copilot-cli": {
+			"favorite_config_option_values": {
+				"model": ["claude-opus-4.6", "claude-sonnet-4.6"],
+			},
+			"type": "registry",
+		},
+	},
 	"ui_font_family": "Iosevka Aile",
 	"terminal": {
 		"font_family": "Iosevka Nerd Font",
@@ -10,7 +32,6 @@
 			"proxy": null,
 			"proxy_no_verify": null,
 		},
-		"enabled_in_text_threads": false,
 	},
 	"notification_panel": {
 		"dock": "left",
@@ -23,10 +44,7 @@
 		"dock": "right",
 	},
 	"agent": {
-		"default_model": {
-			"provider": "openai",
-			"model": "gpt-5.2-codex",
-		},
+		"single_file_review": true,
 		"model_parameters": [],
 		"dock": "right",
 	},
@@ -79,16 +97,31 @@
 	"wrap_guides": [50, 72, 80, 100, 120],
 	"context_servers": {
 		"netlify": {
-			"command": "npx",
+   "command": "npx",
 			"args": ["-y", "@netlify/mcp"],
 		},
 		"nuxt": {
-			"command": "npx",
+   "command": "npx",
 			"args": ["mcp-remote", "https://nuxt.com/mcp"],
 			"env": {},
 		},
 	},
 	"lsp": {
+		"vtsls": {
+			"settings": {
+				"typescript": {
+					"updateImportsOnFileMove": {
+						"enabled": "always",
+					},
+				},
+				"javascript": {
+					"updateImportsOnFileMove": {
+						"enabled": "always",
+					},
+				},
+			},
+			"enable_lsp_tasks": true,
+		},
 		"rust-analyzer": {
 			"initialization_options": {
 				"rustfmt": {
