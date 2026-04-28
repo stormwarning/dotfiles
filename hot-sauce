@@ -98,11 +98,15 @@ ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
 ln -s ~/.dotfiles/git/gitignore ~/.gitignore_global
 
 rm -r ~/.config/starship.toml
-ln ~/.dotfiles/conf/starship.toml ~/.config/starship.toml
+ln -s ~/.dotfiles/conf/starship.toml ~/.config/starship.toml
 
 rm -r ~/.config/rio/config.toml
-ln ~/.dotfiles/conf/rio-config.toml ~/.config/rio/config.toml
+ln -s ~/.dotfiles/conf/rio-config.toml ~/.config/rio/config.toml
 cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/rio/dracula-pro.toml ~/.config/rio/themes
+
+rm -r ~/.config/ghostty/config.ghostty
+ln -s ~/.dotfiles/conf/config.ghostty ~/.config/ghostty/config.ghostty
+cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/ghostty/pro ~/.config/ghostty/dracula-pro.ghostty
 
 ln -s ~/.dotfiles/conf/zed-settings.json ~/.config/zed/settings.json
 cp ~/Library/Mobile\ Documents/com~apple~CloudDocs/Dracula/zed/dracula_pro.json ~/.config/zed/themes
